@@ -1,0 +1,20 @@
+{
+  "name": "hackatonwebpage",
+  "version": "1.0.0",
+  "description": "This is a repository for my diploma project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ioshami/HackatonWebPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ioshami/HackatonWebPage/issues"
+  },
+  "homepage": "https://github.com/Ioshami/HackatonWebPage#readme"
+}
