@@ -1,0 +1,40 @@
+@import "_fonts";
+@import "_parameters";
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #191D2F;
+}
+
+header {
+    width: 100%;
+    height: $headerHeight;
+    position: fixed;
+    background-image: url('../pics/космос.png');
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+        .hackatonLogo {
+
+            height: $headerHeight;
+            background-image: url('../pics/logo_v.svg');
+
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            list-style: none;
+            padding: calc($headerHeight/3);
+            // !!! НЕ ПОДКЛЮЧИЛСЯ ШРИФТ ЧТО_ТО
+            font-family: "agFutura";
+
+        }
+    }
+}
