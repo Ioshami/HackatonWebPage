@@ -1,9 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: "agFutura";
-  src: url("../fonts/ag_futura.ttf") format("truetype");
+  src: url("../fonts/ag-futura.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
+}
+@font-face {
+  font-family: "agFuturaBold";
+  src: url("../fonts/ag-futura-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
 }
 body {
   padding: 0;
@@ -16,6 +22,7 @@ header {
   height: 150px;
   position: fixed;
   background-image: url("../pics/космос.png");
+  background-size: cover;
 }
 header nav {
   display: grid;
@@ -23,7 +30,11 @@ header nav {
 }
 header nav .hackatonLogo {
   height: 150px;
-  background-image: url("../pics/logo_v.svg");
+  background-image: url("../pics/logo_v.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 15%;
 }
 header nav ul {
   display: flex;
@@ -36,15 +47,136 @@ header nav ul {
 
 @font-face {
   font-family: "agFutura";
-  src: url("../fonts/ag_futura.ttf") format("truetype");
+  src: url("../fonts/ag-futura.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "agFuturaBold";
+  src: url("../fonts/ag-futura-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "agFutura";
+  src: url("../fonts/ag-futura.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "agFuturaBold";
+  src: url("../fonts/ag-futura-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
 main .about {
-  border-radius: 4px;
+  padding-top: 50px;
+  position: relative;
+}
+main .about .block {
+  border-radius: 40px;
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 700px;
+  height: 300px;
+  margin: 0 calc(50% - 350px);
+  text-align: center;
+  z-index: -10;
+  position: relative;
+}
+main .about .block h2 {
+  margin: 0 calc(50% - 233.3333333333px);
+  padding-top: 135px;
+  font-family: "agFuturaBold";
+}
+main .about .block h1 {
+  margin: 0 calc(50% - 233.3333333333px);
+  font-family: "agFuturaBold";
+  font-size: 43pt;
+  text-decoration: underline;
+}
+main .about .block h3 {
+  margin: 0 calc(50% - 233.3333333333px);
+  position: relative;
+}
+main .about .block h3:after {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: -245px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../pics/1_planet.png");
+  background-size: cover;
+}
+main .about .block h4 {
+  font-family: "agFuturaBold";
+  font-size: 51pt;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+main .about .block .logoBNTUWithInfofmation {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+main .about .block .logoBNTUWithInfofmation .bntuLogo {
+  width: 150px;
+  height: 181px;
+  margin: auto;
+  background-image: url("../pics/logo BNTY.png");
+  background-size: cover;
+}
+main .about .block .logoBNTUWithInfofmation .info {
+  font-family: "agFuturaBold";
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+main .about .block .logoBNTUWithInfofmation::after {
+  content: "";
+  position: absolute;
+  top: 570px;
+  left: 780px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../pics/1_planet.png");
+  background-size: cover;
+}
+main .about .block .logoBNTUWithInfofmation::before {
+  content: "";
+  position: absolute;
+  top: 480px;
+  left: 660px;
+  width: 190px;
+  height: 190px;
+  background-image: url("../pics/2_planet.png");
+  background-size: cover;
+}
+main .about .block::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 410px;
+  top: 100px;
+  left: 140px;
+  background-image: url(../pics/1_fon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+main .about::before {
+  z-index: -10;
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 410px;
+  top: 350px;
+  left: calc(50% - 350px);
+  border-radius: 40px;
+  background-color: white;
+  width: 700px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=main.css.map */

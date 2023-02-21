@@ -13,17 +13,23 @@ header {
     height: $headerHeight;
     position: fixed;
     background-image: url('../pics/космос.png');
+    background-size: cover;
 
     nav {
         display: grid;
         grid-template-columns: 1fr 3fr;
+        
 
         .hackatonLogo {
 
             height: $headerHeight;
-            background-image: url('../pics/logo_v.svg');
-
-
+            background-image: url('../pics/logo_v.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 15%;
+            
+           
         }
 
         ul {
@@ -32,7 +38,6 @@ header {
             color: white;
             list-style: none;
             padding: calc($headerHeight/3);
-            // !!! НЕ ПОДКЛЮЧИЛСЯ ШРИФТ ЧТО_ТО
             font-family: "agFutura";
 
         }
