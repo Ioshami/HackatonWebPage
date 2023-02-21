@@ -11,7 +11,7 @@ main {
         position: relative;
 
         .block {
-            border-radius: 40px;
+            border-radius: $borderRounding;
             background-color: white;
             width: $ticketWidth;
             height: $ticketHeight;
@@ -93,7 +93,7 @@ main {
             .logoBNTUWithInfofmation::after {
                 content: '';
                 position: absolute;
-                top: 570px;
+                top: 770px;
                 left: 780px;
 
                 width: 150px;
@@ -106,7 +106,7 @@ main {
             .logoBNTUWithInfofmation::before {
                 content: '';
                 position: absolute;
-                top: 480px;
+                top: 680px;
                 left: 660px;
 
                 width: 190px;
@@ -134,12 +134,36 @@ main {
             background-repeat: no-repeat;
 
             z-index: -1;
-
-
-            //about
         }
 
+        .idea{
+            border-radius: 0 $borderRounding*2 $borderRounding $borderRounding;
 
+            background-color: white;
+
+            width: $ticketWidth;
+            height: $ticketHeight;
+
+            margin: $ticketHeight calc(50% - $ticketWidth/2);
+            
+
+            z-index: -10;
+
+            h1{
+                font-family: "agFuturaBold";
+                font-size: 27pt;
+                padding: 0 60px;
+            }
+
+            p{
+                font-family: "agFutura";
+                font-size: 14pt;
+                padding: 0 60px;
+            }
+
+        }
+
+        //about
     }
 
     //белый блок под block
@@ -154,7 +178,8 @@ main {
         top: $ticketHeight + $headerHeight/3;
         left: calc(50% - $ticketWidth/2);
 
-        border-radius: 40px;
+        border-radius: $borderRounding $borderRounding $borderRounding*2 0;
+
         background-color: white;
         width: $ticketWidth;
         height: $ticketHeight;
