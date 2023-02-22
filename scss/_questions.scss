@@ -1,0 +1,36 @@
+.questions {
+
+    margin: 0;
+    padding: 0;
+
+    .generalBlock {
+        background-color: white;
+        margin: 0 calc(50% - $ticketWidth/2);
+
+        border-radius: $borderRounding;
+
+        padding: 0;
+    }
+
+    .question {
+
+        margin: 0 calc(50% - $ticketWidth/2);
+
+        h1 {
+            font-family: "agFuturaBold";
+            font-size: 27pt;
+            padding: 20px 60px;
+            margin: 0;
+        }
+
+        p {
+            font-family: "agFutura";
+            font-size: 14pt;
+            padding: 0 60px;
+            margin: 0;
+        }
+
+    }
+
+
+}

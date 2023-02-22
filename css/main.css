@@ -69,11 +69,11 @@ header nav ul {
   font-style: normal;
   font-weight: bold;
 }
-main .about {
+.about {
   padding-top: 50px;
   position: relative;
 }
-main .about .block {
+.about .block {
   border-radius: 40px;
   background-color: white;
   width: 700px;
@@ -83,22 +83,22 @@ main .about .block {
   z-index: -10;
   position: relative;
 }
-main .about .block h2 {
+.about .block h2 {
   margin: 0 calc(50% - 233.3333333333px);
   padding-top: 135px;
   font-family: "agFuturaBold";
 }
-main .about .block h1 {
+.about .block h1 {
   margin: 0 calc(50% - 233.3333333333px);
   font-family: "agFuturaBold";
   font-size: 43pt;
   text-decoration: underline;
 }
-main .about .block h3 {
+.about .block h3 {
   margin: 0 calc(50% - 233.3333333333px);
   position: relative;
 }
-main .about .block h3:after {
+.about .block h3:after {
   content: "";
   position: absolute;
   top: -120px;
@@ -108,32 +108,32 @@ main .about .block h3:after {
   background-image: url("../pics/1_planet.png");
   background-size: cover;
 }
-main .about .block h4 {
+.about .block h4 {
   font-family: "agFuturaBold";
   font-size: 51pt;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-main .about .block .logoBNTUWithInfofmation {
+.about .block .logoBNTUWithInfofmation {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-main .about .block .logoBNTUWithInfofmation .bntuLogo {
+.about .block .logoBNTUWithInfofmation .bntuLogo {
   width: 150px;
   height: 181px;
   margin: auto;
   background-image: url("../pics/logo BNTY.png");
   background-size: cover;
 }
-main .about .block .logoBNTUWithInfofmation .info {
+.about .block .logoBNTUWithInfofmation .info {
   font-family: "agFuturaBold";
   font-size: 27px;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-main .about .block .logoBNTUWithInfofmation::after {
+.about .block .logoBNTUWithInfofmation::after {
   content: "";
   position: absolute;
   top: 770px;
@@ -143,7 +143,7 @@ main .about .block .logoBNTUWithInfofmation::after {
   background-image: url("../pics/1_planet.png");
   background-size: cover;
 }
-main .about .block .logoBNTUWithInfofmation::before {
+.about .block .logoBNTUWithInfofmation::before {
   content: "";
   position: absolute;
   top: 680px;
@@ -153,7 +153,7 @@ main .about .block .logoBNTUWithInfofmation::before {
   background-image: url("../pics/2_planet.png");
   background-size: cover;
 }
-main .about .block::after {
+.about .block::after {
   content: "";
   position: absolute;
   width: 400px;
@@ -165,25 +165,25 @@ main .about .block::after {
   background-repeat: no-repeat;
   z-index: -1;
 }
-main .about .idea {
+.about .idea {
   border-radius: 0 80px 40px 40px;
   background-color: white;
   width: 700px;
   height: 300px;
   margin: 300px calc(50% - 350px);
-  z-index: -10;
 }
-main .about .idea h1 {
+.about .idea h1 {
   font-family: "agFuturaBold";
   font-size: 27pt;
   padding: 0 60px;
 }
-main .about .idea p {
+.about .idea p {
   font-family: "agFutura";
   font-size: 14pt;
   padding: 0 60px;
 }
-main .about::before {
+
+.about::before {
   z-index: -10;
   content: "";
   position: absolute;
@@ -195,6 +195,32 @@ main .about::before {
   background-color: white;
   width: 700px;
   height: 300px;
+}
+
+.questions {
+  margin: 0;
+  padding: 0;
+}
+.questions .generalBlock {
+  background-color: white;
+  margin: 0 calc(50% - 350px);
+  border-radius: 40px;
+  padding: 0;
+}
+.questions .question {
+  margin: 0 calc(50% - 350px);
+}
+.questions .question h1 {
+  font-family: "agFuturaBold";
+  font-size: 27pt;
+  padding: 20px 60px;
+  margin: 0;
+}
+.questions .question p {
+  font-family: "agFutura";
+  font-size: 14pt;
+  padding: 0 60px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

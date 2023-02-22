@@ -3,7 +3,7 @@
 // $ticketWidth:700px;
 // $ticketHeight:300px;
 
-main {
+
     .about {
 
         padding-top: $headerHeight/3;
@@ -145,9 +145,6 @@ main {
             height: $ticketHeight;
 
             margin: $ticketHeight calc(50% - $ticketWidth/2);
-            
-
-            z-index: -10;
 
             h1{
                 font-family: "agFuturaBold";
@@ -185,4 +182,3 @@ main {
         height: $ticketHeight;
     }
 
-}
