@@ -14,11 +14,12 @@ header {
     position: fixed;
     background-image: url('../pics/космос.png');
     background-size: cover;
+    z-index: 100;
 
     nav {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        
+
 
         .hackatonLogo {
 
@@ -28,8 +29,8 @@ header {
             background-repeat: no-repeat;
             background-position: center;
             margin-left: 15%;
-            
-           
+
+
         }
 
         ul {
@@ -39,7 +40,21 @@ header {
             list-style: none;
             padding: calc($headerHeight/3);
             font-family: "agFutura";
+            font-size: 14pt;
 
+            a {
+                text-decoration: none;
+                color: white;
+                list-style: none;
+                padding: calc($headerHeight/3);
+                font-family: "agFutura";
+
+            }
+        }
+
+        ul>li:hover {
+            cursor: pointer;
+            font-size: 18pt;
         }
     }
 }

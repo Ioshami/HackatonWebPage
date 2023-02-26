@@ -23,6 +23,7 @@ header {
   position: fixed;
   background-image: url("../pics/космос.png");
   background-size: cover;
+  z-index: 100;
 }
 header nav {
   display: grid;
@@ -43,6 +44,65 @@ header nav ul {
   list-style: none;
   padding: 50px;
   font-family: "agFutura";
+  font-size: 14pt;
+}
+header nav ul a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  padding: 50px;
+  font-family: "agFutura";
+}
+header nav ul > li:hover {
+  cursor: pointer;
+  font-size: 18pt;
+}
+
+@font-face {
+  font-family: "agFutura";
+  src: url("../fonts/ag-futura.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "agFuturaBold";
+  src: url("../fonts/ag-futura-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+footer .footerWrapper {
+  padding: 0;
+  margin-top: 30px;
+  background-color: #131726;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+footer .footerWrapper .logoHackatonFooter {
+  width: 317px;
+  height: 71.3333333333px;
+  margin: auto;
+  background-image: url("../pics/logo_b.png");
+  background-size: cover;
+}
+footer .footerWrapper .infoFooter {
+  margin: auto;
+}
+footer .footerWrapper .infoFooter h1 {
+  font-family: "agFuturaBold";
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+footer .footerWrapper .infoFooter p {
+  font-family: "agFutura";
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
 }
 
 @font-face {
@@ -156,10 +216,10 @@ header nav ul {
 .about .block::after {
   content: "";
   position: absolute;
-  width: 400px;
-  height: 410px;
-  top: 100px;
-  left: 140px;
+  width: 508px;
+  height: 518px;
+  top: 84px;
+  left: 72px;
   background-image: url(../pics/1_fon.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,10 +227,14 @@ header nav ul {
 }
 .about .idea {
   border-radius: 0 80px 40px 40px;
+  border-bottom: 2px solid #191D2F;
   background-color: white;
   width: 700px;
   height: 300px;
   margin: 300px calc(50% - 350px);
+  margin-bottom: 0;
+  z-index: -10;
+  position: relative;
 }
 .about .idea h1 {
   font-family: "agFuturaBold";
@@ -181,6 +245,28 @@ header nav ul {
   font-family: "agFutura";
   font-size: 14pt;
   padding: 0 60px;
+}
+.about .idea .yearsInFrame {
+  position: absolute;
+  width: 466.6666666667px;
+  height: 60px;
+  top: 239px;
+  left: 235px;
+  border: 2px solid #191D2F;
+  border-radius: 40px 0 0 40px;
+  border-right: 0;
+  border-right-style: none;
+  border-bottom-style: none;
+}
+.about .idea .yearsInFrame h1 {
+  font-family: "agFuturaBold";
+  font-size: 27pt;
+  padding: 10px 60px;
+  color: #191D2F;
+  margin: auto;
+}
+.about .idea .yearsInFrame h1 span {
+  color: #87878a;
 }
 
 .about::before {
@@ -200,12 +286,19 @@ header nav ul {
 .questions {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .questions .generalBlock {
   background-color: white;
   margin: 0 calc(50% - 350px);
   border-radius: 40px;
   padding: 0;
+}
+.questions .blockBorderRadiusNoRoundingAtBottomLeft {
+  border-bottom-left-radius: 0;
+}
+.questions .blockBorderRadiusNoRoundingAtTopLeft {
+  border-top-left-radius: 0;
 }
 .questions .question {
   margin: 0 calc(50% - 350px);
@@ -221,6 +314,215 @@ header nav ul {
   font-size: 14pt;
   padding: 0 60px;
   margin: 0;
+}
+.questions .question .lastBlock {
+  height: 200px;
+  width: 700px;
+}
+.questions .question .lastBlock .logoHackaton {
+  height: 107px;
+  width: 475px;
+  background-image: url("../pics/logo_b.png");
+  background-size: cover;
+  margin: auto;
+  margin-top: 40px;
+}
+.questions .blockWhatIsHackaton {
+  position: relative;
+}
+.questions .blockWhatIsHackaton .halfCircle {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  top: 118px;
+  left: 613px;
+  border: 10px solid #191D2F;
+  border-radius: 50%;
+  background-color: #191D2F;
+}
+.questions .blockWhyHackaton {
+  position: relative;
+}
+.questions .blockWhyHackaton .halfCircle {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  top: 175px;
+  left: 648px;
+  border: 10px solid #191D2F;
+  border-radius: 50%;
+  background-color: #191D2F;
+}
+.questions .blockWhyHold {
+  position: relative;
+  z-index: 10;
+}
+.questions .blockWhyHold .fon {
+  position: absolute;
+  width: 411px;
+  height: 196px;
+  top: -2px;
+  left: 0;
+  background-image: url(../pics/2_fon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.questions .blockWhatCanILearn {
+  position: relative;
+  z-index: 10;
+}
+.questions .blockWhatCanILearn .fon {
+  position: absolute;
+  width: 400px;
+  height: 410px;
+  top: -29px;
+  left: 140px;
+  background-image: url(../pics/1_fon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.questions .planet1 {
+  position: absolute;
+  top: 770px;
+  left: 900px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../pics/1_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+.questions .planet2 {
+  position: absolute;
+  top: 466px;
+  left: 60px;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  background-image: url("../pics/3_planet.png");
+  background-size: cover;
+}
+.questions .planet3 {
+  position: absolute;
+  top: 113px;
+  left: 23px;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  background-image: url("../pics/2_planet.png");
+  background-size: cover;
+}
+.questions .planet4 {
+  position: absolute;
+  top: 370px;
+  left: 930px;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  background-image: url("../pics/2_planet.png");
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "agFutura";
+  src: url("../fonts/ag-futura.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "agFuturaBold";
+  src: url("../fonts/ag-futura-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+.organizators {
+  min-height: 300px;
+  width: 700px;
+  background-color: white;
+  margin: 20px calc(50% - 350px);
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 40px;
+}
+.organizators h1 {
+  font-family: "agFuturaBold";
+  font-size: 27pt;
+}
+.organizators .organizatorsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.organizators .organizatorsWrapper .organizator {
+  display: flex;
+  flex-direction: column;
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #191D2F;
+  border-radius: 50%;
+}
+.organizators .organizatorsWrapper .organizator .organizatorInformation {
+  height: 60px;
+  width: 120px;
+}
+
+@font-face {
+  font-family: "agFutura";
+  src: url("../fonts/ag-futura.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "agFuturaBold";
+  src: url("../fonts/ag-futura-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+.program {
+  min-height: 300px;
+  width: 700px;
+  background-color: white;
+  margin: 20px calc(50% - 350px);
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 40px;
+}
+.program h1 {
+  font-family: "agFuturaBold";
+  font-size: 27pt;
+}
+.program .day .dayHeader {
+  text-align: left;
+  margin-left: 90px;
+}
+.program .day .dayHeader h2 {
+  font-family: "agFutura";
+  font-size: 27pt;
+}
+.program .day .dayHeader h2 span {
+  font-family: "agFuturaBold";
+  font-size: 51pt;
+}
+.program .day .dayProgram {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.program .day .dayProgram .timeDayProgram {
+  text-align: right;
+  font-family: "agFutura";
+  font-size: 14pt;
+  margin-right: 15px;
+}
+.program .day .dayProgram .activityDayProgram {
+  text-align: left;
+  font-family: "agFutura";
+  font-size: 14pt;
+  padding-left: 15px;
+  border-left: 1px solid #191D2F;
 }
 
 /*# sourceMappingURL=main.css.map */

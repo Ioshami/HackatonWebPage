@@ -4,181 +4,214 @@
 // $ticketHeight:300px;
 
 
-    .about {
+.about {
 
-        padding-top: $headerHeight/3;
+    padding-top: $headerHeight/3;
 
-        position: relative;
+    position: relative;
 
-        .block {
-            border-radius: $borderRounding;
-            background-color: white;
-            width: $ticketWidth;
-            height: $ticketHeight;
-            margin: 0 calc(50% - $ticketWidth/2);
-            text-align: center;
-
-            z-index: -10;
-
-            position: relative;
-
-            h2 {
-                margin: 0 calc(50% - $ticketWidth/3);
-                padding-top: $ticketHeight/2 - 15px;
-                font-family: "agFuturaBold";
-            }
-
-            h1 {
-                margin: 0 calc(50% - $ticketWidth/3);
-                font-family: "agFuturaBold";
-                font-size: 43pt;
-                text-decoration: underline;
-            }
-
-
-            h3 {
-                margin: 0 calc(50% - $ticketWidth/3);
-                position: relative;
-            }
-
-            h3:after {
-                content: '';
-                position: absolute;
-                top: -120px;
-                left: -245px;
-
-                width: 150px;
-                height: 150px;
-
-                background-image: url('../pics/1_planet.png');
-                background-size: cover;
-
-            }
-
-            h4 {
-                font-family: "agFuturaBold";
-                font-size: 51pt;
-                margin: 0;
-                padding: 0;
-                text-decoration: none;
-
-            }
-
-            .logoBNTUWithInfofmation {
-
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-
-                .bntuLogo {
-                    width: 150px;
-                    height: 181px;
-
-                    margin: auto;
-
-                    background-image: url('../pics/logo\ BNTY.png');
-                    background-size: cover;
-                }
-
-                .info {
-                    font-family: "agFuturaBold";
-                    font-size: 27px;
-                    margin: 0;
-                    padding: 0;
-                    text-decoration: none;
-                }
-
-                //logoBNTUWithInfofmation
-            }
-
-            .logoBNTUWithInfofmation::after {
-                content: '';
-                position: absolute;
-                top: 770px;
-                left: 780px;
-
-                width: 150px;
-                height: 150px;
-
-                background-image: url('../pics/1_planet.png');
-                background-size: cover;
-            }
-
-            .logoBNTUWithInfofmation::before {
-                content: '';
-                position: absolute;
-                top: 680px;
-                left: 660px;
-
-                width: 190px;
-                height: 190px;
-
-                background-image: url('../pics/2_planet.png');
-                background-size: cover;
-            }
-
-            //block
-        }
-
-        //цветной фон под текстом
-        .block::after {
-            content: '';
-            position: absolute;
-
-            width: 400px;
-            height: 410px;
-
-            top: 100px;
-            left: $ticketWidth/5;
-            background-image: url(../pics/1_fon.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-
-            z-index: -1;
-        }
-
-        .idea{
-            border-radius: 0 $borderRounding*2 $borderRounding $borderRounding;
-
-            background-color: white;
-
-            width: $ticketWidth;
-            height: $ticketHeight;
-
-            margin: $ticketHeight calc(50% - $ticketWidth/2);
-
-            h1{
-                font-family: "agFuturaBold";
-                font-size: 27pt;
-                padding: 0 60px;
-            }
-
-            p{
-                font-family: "agFutura";
-                font-size: 14pt;
-                padding: 0 60px;
-            }
-
-        }
-
-        //about
-    }
-
-    //белый блок под block
-    .about::before {
-        z-index: -10;
-        content: '';
-        position: absolute;
-
-        width: 400px;
-        height: 410px;
-
-        top: $ticketHeight + $headerHeight/3;
-        left: calc(50% - $ticketWidth/2);
-
-        border-radius: $borderRounding $borderRounding $borderRounding*2 0;
-
+    .block {
+        border-radius: $borderRounding;
         background-color: white;
         width: $ticketWidth;
         height: $ticketHeight;
+        margin: 0 calc(50% - $ticketWidth/2);
+        text-align: center;
+
+        z-index: -10;
+
+        position: relative;
+
+        h2 {
+            margin: 0 calc(50% - $ticketWidth/3);
+            padding-top: $ticketHeight/2 - 15px;
+            font-family: "agFuturaBold";
+        }
+
+        h1 {
+            margin: 0 calc(50% - $ticketWidth/3);
+            font-family: "agFuturaBold";
+            font-size: 43pt;
+            text-decoration: underline;
+        }
+
+
+        h3 {
+            margin: 0 calc(50% - $ticketWidth/3);
+            position: relative;
+        }
+
+        h3:after {
+            content: '';
+            position: absolute;
+            top: -120px;
+            left: -245px;
+
+            width: 150px;
+            height: 150px;
+
+            background-image: url('../pics/1_planet.png');
+            background-size: cover;
+
+        }
+
+        h4 {
+            font-family: "agFuturaBold";
+            font-size: 51pt;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+
+        }
+
+        .logoBNTUWithInfofmation {
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+
+            .bntuLogo {
+                width: 150px;
+                height: 181px;
+
+                margin: auto;
+
+                background-image: url('../pics/logo\ BNTY.png');
+                background-size: cover;
+            }
+
+            .info {
+                font-family: "agFuturaBold";
+                font-size: 27px;
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+            }
+
+            //logoBNTUWithInfofmation
+        }
+
+        .logoBNTUWithInfofmation::after {
+            content: '';
+            position: absolute;
+            top: 770px;
+            left: 780px;
+
+            width: 150px;
+            height: 150px;
+
+            background-image: url('../pics/1_planet.png');
+            background-size: cover;
+        }
+
+        .logoBNTUWithInfofmation::before {
+            content: '';
+            position: absolute;
+            top: 680px;
+            left: 660px;
+
+            width: 190px;
+            height: 190px;
+
+            background-image: url('../pics/2_planet.png');
+            background-size: cover;
+        }
+
+        //block
     }
 
+    //цветной фон под текстом
+    .block::after {
+        content: '';
+        position: absolute;
+
+        width: 508px;
+        height: 518px;
+
+        top: 84px;
+        left: 72px;
+        background-image: url(../pics/1_fon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        z-index: -1;
+    }
+
+    .idea {
+        border-radius: 0 $borderRounding*2 $borderRounding $borderRounding;
+        border-bottom: 2px solid #191D2F;
+        background-color: white;
+
+        width: $ticketWidth;
+        height: $ticketHeight;
+
+        margin: $ticketHeight calc(50% - $ticketWidth/2);
+        margin-bottom: 0;
+        z-index: -10;
+
+        position: relative;
+
+        h1 {
+            font-family: "agFuturaBold";
+            font-size: 27pt;
+            padding: 0 60px;
+        }
+
+        p {
+            font-family: "agFutura";
+            font-size: 14pt;
+            padding: 0 60px;
+        }
+
+        .yearsInFrame {
+            position: absolute;
+
+            width: 2*$ticketWidth/3;
+            height: 60px;
+
+            top: 239px;
+            left: 235px;
+
+            border: 2px solid #191D2F;
+            ;
+            border-radius: $borderRounding 0 0 $borderRounding;
+            border-right: 0;
+            border-right-style: none;
+            border-bottom-style: none;
+
+            h1 {
+                font-family: "agFuturaBold";
+                font-size: 27pt;
+                padding: 10px 60px;
+                color: #191D2F;
+                margin: auto;
+
+                span{
+                    color: #87878a;
+                }
+            }
+
+        }
+
+    }
+
+    //about
+}
+
+//белый блок под block
+.about::before {
+    z-index: -10;
+    content: '';
+    position: absolute;
+
+    width: 400px;
+    height: 410px;
+
+    top: $ticketHeight + $headerHeight/3;
+    left: calc(50% - $ticketWidth/2);
+
+    border-radius: $borderRounding $borderRounding $borderRounding*2 0;
+
+    background-color: white;
+    width: $ticketWidth;
+    height: $ticketHeight;
+}
