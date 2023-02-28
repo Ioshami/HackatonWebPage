@@ -72,7 +72,6 @@ header nav ul > li:hover {
 }
 footer .footerWrapper {
   padding: 0;
-  margin-top: 30px;
   background-color: #131726;
   height: 400px;
   display: grid;
@@ -130,22 +129,22 @@ footer .footerWrapper .infoFooter p {
   font-weight: bold;
 }
 .about {
-  padding-top: 50px;
   position: relative;
 }
 .about .block {
-  border-radius: 40px;
+  border-radius: 0 0 40px 40px;
   background-color: white;
   width: 700px;
-  height: 300px;
+  height: 330px;
   margin: 0 calc(50% - 350px);
+  padding: 0;
   text-align: center;
   z-index: -10;
   position: relative;
 }
 .about .block h2 {
   margin: 0 calc(50% - 233.3333333333px);
-  padding-top: 135px;
+  padding-top: 150px;
   font-family: "agFuturaBold";
 }
 .about .block h1 {
@@ -157,6 +156,8 @@ footer .footerWrapper .infoFooter p {
 .about .block h3 {
   margin: 0 calc(50% - 233.3333333333px);
   position: relative;
+  font-family: "agFutura";
+  font-size: 16pt;
 }
 .about .block h3:after {
   content: "";
@@ -230,9 +231,10 @@ footer .footerWrapper .infoFooter p {
   border-bottom: 2px solid #191D2F;
   background-color: white;
   width: 700px;
-  height: 300px;
-  margin: 300px calc(50% - 350px);
+  height: 390px;
+  margin: 330px calc(50% - 350px);
   margin-bottom: 0;
+  padding-top: 0;
   z-index: -10;
   position: relative;
 }
@@ -240,17 +242,21 @@ footer .footerWrapper .infoFooter p {
   font-family: "agFuturaBold";
   font-size: 27pt;
   padding: 0 60px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 .about .idea p {
   font-family: "agFutura";
-  font-size: 14pt;
+  font-size: 16pt;
   padding: 0 60px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 .about .idea .yearsInFrame {
   position: absolute;
   width: 466.6666666667px;
   height: 60px;
-  top: 239px;
+  top: 330px;
   left: 235px;
   border: 2px solid #191D2F;
   border-radius: 40px 0 0 40px;
@@ -275,12 +281,12 @@ footer .footerWrapper .infoFooter p {
   position: absolute;
   width: 400px;
   height: 410px;
-  top: 350px;
+  top: 330px;
   left: calc(50% - 350px);
   border-radius: 40px 40px 80px 0;
   background-color: white;
   width: 700px;
-  height: 300px;
+  height: 330px;
 }
 
 .questions {
@@ -311,9 +317,10 @@ footer .footerWrapper .infoFooter p {
 }
 .questions .question p {
   font-family: "agFutura";
-  font-size: 14pt;
+  font-size: 16pt;
   padding: 0 60px;
   margin: 0;
+  padding-bottom: 15px;
 }
 .questions .question .lastBlock {
   height: 200px;
@@ -334,7 +341,7 @@ footer .footerWrapper .infoFooter p {
   position: absolute;
   height: 160px;
   width: 160px;
-  top: 118px;
+  top: 205px;
   left: 613px;
   border: 10px solid #191D2F;
   border-radius: 50%;
@@ -356,12 +363,13 @@ footer .footerWrapper .infoFooter p {
 .questions .blockWhyHold {
   position: relative;
   z-index: 10;
+  border-bottom: 2px solid #191D2F;
 }
 .questions .blockWhyHold .fon {
   position: absolute;
-  width: 411px;
-  height: 196px;
-  top: -2px;
+  width: 499px;
+  height: 304px;
+  top: -17px;
   left: 0;
   background-image: url(../pics/2_fon.png);
   background-size: cover;
@@ -372,12 +380,21 @@ footer .footerWrapper .infoFooter p {
   position: relative;
   z-index: 10;
 }
+.questions .blockWhatCanILearn ul {
+  padding: 0 60px;
+}
+.questions .blockWhatCanILearn ul li {
+  font-family: "agFutura";
+  font-size: 16pt;
+  margin: 0;
+  padding-bottom: 15px;
+}
 .questions .blockWhatCanILearn .fon {
   position: absolute;
-  width: 400px;
-  height: 410px;
-  top: -29px;
-  left: 140px;
+  width: 622px;
+  height: 633px;
+  top: -1px;
+  left: 36px;
   background-image: url(../pics/1_fon.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -437,23 +454,22 @@ footer .footerWrapper .infoFooter p {
   font-weight: bold;
 }
 .organizators {
-  min-height: 300px;
-  width: 700px;
-  background-color: white;
-  margin: 20px calc(50% - 350px);
+  min-height: 330px;
+  background-color: #10162e;
   padding-top: 20px;
   text-align: center;
-  border-radius: 40px;
 }
 .organizators h1 {
   font-family: "agFuturaBold";
   font-size: 27pt;
+  color: white;
 }
 .organizators .organizatorsWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 60px;
 }
 .organizators .organizatorsWrapper .organizator {
   display: flex;
@@ -462,12 +478,15 @@ footer .footerWrapper .infoFooter p {
 .organizators .organizatorsWrapper .organizator .organizatorPicture {
   height: 120px;
   width: 120px;
-  border: 1px solid #191D2F;
+  border: 1px solid #fff;
   border-radius: 50%;
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation {
   height: 60px;
   width: 120px;
+  font-family: "agFutura";
+  font-size: 17pt;
+  color: white;
 }
 
 @font-face {
@@ -483,13 +502,15 @@ footer .footerWrapper .infoFooter p {
   font-weight: bold;
 }
 .program {
-  min-height: 300px;
+  position: relative;
+  min-height: 330px;
   width: 700px;
   background-color: white;
   margin: 20px calc(50% - 350px);
-  padding-top: 20px;
+  margin-bottom: 0;
+  padding: 20px 0;
   text-align: center;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
 }
 .program h1 {
   font-family: "agFuturaBold";
@@ -523,6 +544,123 @@ footer .footerWrapper .infoFooter p {
   font-size: 14pt;
   padding-left: 15px;
   border-left: 1px solid #191D2F;
+}
+.program .planet1 {
+  position: absolute;
+  top: -229px;
+  left: 792px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../pics/2_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+.program .planet2 {
+  position: absolute;
+  top: 229px;
+  left: -210px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../pics/1_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+.program .planet3 {
+  position: absolute;
+  top: 1025px;
+  left: -102px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../pics/2_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+.program .planet4 {
+  position: absolute;
+  top: 1440px;
+  left: 747px;
+  width: 130px;
+  height: 130px;
+  background-image: url("../pics/2_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+.program .planet5 {
+  position: absolute;
+  top: 770px;
+  left: 900px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../pics/1_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+.program .planet6 {
+  position: absolute;
+  top: 770px;
+  left: 900px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../pics/1_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+.program .planet7 {
+  position: absolute;
+  top: 770px;
+  left: 900px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../pics/1_planet.png");
+  background-size: cover;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: "agFutura";
+  src: url("../fonts/ag-futura.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "agFuturaBold";
+  src: url("../fonts/ag-futura-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+.yearGalery {
+  min-height: 330px;
+  background-color: #10162e;
+  padding-top: 30px;
+  text-align: center;
+}
+.yearGalery h1 {
+  font-family: "agFuturaBold";
+  font-size: 27pt;
+  color: white;
+  padding-top: 150px;
+}
+.yearGalery .yearWrapper {
+  padding-top: 37.5px;
+}
+.yearGalery .yearWrapper .yearPhotos {
+  padding: 0 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.yearGalery .yearWrapper .yearPhotos .photo {
+  width: 342.5px;
+  height: 228.5px;
+  background-image: url(../pics/14736428t1h4a35.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.year2021Wrapper {
+  padding-top: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */

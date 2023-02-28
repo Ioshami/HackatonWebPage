@@ -5,17 +5,23 @@
 
 
 .about {
-
-    padding-top: $headerHeight/3;
+ 
+    // padding-top: $headerHeight/3;
 
     position: relative;
 
     .block {
-        border-radius: $borderRounding;
+        border-radius: 0 0 $borderRounding $borderRounding;
+
         background-color: white;
+
         width: $ticketWidth;
         height: $ticketHeight;
+
         margin: 0 calc(50% - $ticketWidth/2);
+        padding: 0;
+
+
         text-align: center;
 
         z-index: -10;
@@ -39,6 +45,8 @@
         h3 {
             margin: 0 calc(50% - $ticketWidth/3);
             position: relative;
+            font-family: "agFutura";
+            font-size: 16pt;
         }
 
         h3:after {
@@ -142,10 +150,12 @@
         background-color: white;
 
         width: $ticketWidth;
-        height: $ticketHeight;
+        height: $ticketHeight + 60px;
 
         margin: $ticketHeight calc(50% - $ticketWidth/2);
         margin-bottom: 0;
+        padding-top: 0;
+
         z-index: -10;
 
         position: relative;
@@ -154,13 +164,18 @@
             font-family: "agFuturaBold";
             font-size: 27pt;
             padding: 0 60px;
+            margin: 0;
+            margin-bottom: 15px;
         }
 
         p {
             font-family: "agFutura";
-            font-size: 14pt;
+            font-size: 16pt;
             padding: 0 60px;
+            margin: 0;
+            margin-bottom: 15px;
         }
+
 
         .yearsInFrame {
             position: absolute;
@@ -168,7 +183,7 @@
             width: 2*$ticketWidth/3;
             height: 60px;
 
-            top: 239px;
+            top: 330px;
             left: 235px;
 
             border: 2px solid #191D2F;
@@ -185,7 +200,7 @@
                 color: #191D2F;
                 margin: auto;
 
-                span{
+                span {
                     color: #87878a;
                 }
             }
@@ -206,7 +221,7 @@
     width: 400px;
     height: 410px;
 
-    top: $ticketHeight + $headerHeight/3;
+    top: 330px;
     left: calc(50% - $ticketWidth/2);
 
     border-radius: $borderRounding $borderRounding $borderRounding*2 0;

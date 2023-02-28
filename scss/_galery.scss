@@ -1,0 +1,53 @@
+@import "_fonts";
+@import "_parameters";
+
+.yearGalery {
+    min-height: $ticketHeight;
+    // width: $ticketWidth;
+
+    background-color: #10162e;
+    // margin: 20px calc(50% - $ticketWidth/2);
+    padding-top: 30px;
+    text-align: center;
+
+    // border-radius: $borderRounding;
+
+    h1 {
+        font-family: "agFuturaBold";
+        font-size: 27pt;
+        color: white;
+
+        padding-top: $headerHeight;
+    }
+
+    .yearWrapper {
+        padding-top: $headerHeight/4;
+    
+        .yearPhotos {
+    
+            padding: 0 60px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+            .photo {
+    
+                width: calc(685px/2);
+                height: calc(457px/2);
+    
+                background-image: url(../pics/14736428t1h4a35.jpg);
+               
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                margin: 10px;
+            }
+        }
+    }
+
+}
+
+.year2021Wrapper{
+    padding-top: $headerHeight;
+}

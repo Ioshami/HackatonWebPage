@@ -26,6 +26,7 @@
     .question {
 
         margin: 0 calc(50% - $ticketWidth/2);
+        // padding: 20px 60px;
 
         h1 {
             font-family: "agFuturaBold";
@@ -38,9 +39,10 @@
 
         p {
             font-family: "agFutura";
-            font-size: 14pt;
+            font-size: 16pt;
             padding: 0 60px;
             margin: 0;
+            padding-bottom: 15px;
         }
 
         .lastBlock {
@@ -72,7 +74,7 @@
             height: 160px;
             width: 160px;
 
-            top: 118px;
+            top: 205px;
             left: 613px;
 
             border: 10px solid #191D2F;
@@ -107,13 +109,16 @@
     .blockWhyHold {
         position: relative;
         z-index: 10;
+
+        border-bottom: 2px solid #191D2F;
+
         .fon {
             position: absolute;
 
-            width: 411px;
-            height: 196px;
+            width: 499px;
+            height: 304px;
 
-            top: -2px;
+            top: -17px;
             left: 0;
             background-image: url(../pics/2_fon.png);
             background-size: cover;
@@ -126,14 +131,27 @@
         position: relative;
         z-index: 10;
 
+        ul {
+            padding: 0 60px;
+
+            li {
+                font-family: "agFutura";
+                font-size: 16pt;
+                // padding: 0 60px;
+                margin: 0;
+                padding-bottom: 15px;
+            }
+        }
+
+
         .fon {
             position: absolute;
 
-            width: 400px;
-            height: 410px;
+            width: 622px;
+            height: 633px;
 
-            top: -29px;
-            left: $ticketWidth/5;
+            top: -1px;
+            left: 36px;
             background-image: url(../pics/1_fon.png);
             background-size: cover;
             background-repeat: no-repeat;
