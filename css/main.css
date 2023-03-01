@@ -476,16 +476,29 @@ footer .footerWrapper .infoFooter p {
   flex-direction: column;
 }
 .organizators .organizatorsWrapper .organizator .organizatorPicture {
-  height: 120px;
-  width: 120px;
+  height: 200px;
+  width: 200px;
   border: 1px solid #fff;
   border-radius: 50%;
+  margin-left: 100px;
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation {
-  height: 60px;
-  width: 120px;
+  min-height: 240px;
+  width: 390px;
+}
+.organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorName {
+  font-family: "agFuturaBold";
+  font-size: 14pt;
+  color: white;
+}
+.organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorRole {
   font-family: "agFutura";
-  font-size: 17pt;
+  font-size: 12pt;
+  color: rgb(200, 198, 198);
+}
+.organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorDescription {
+  font-family: "agFutura";
+  font-size: 14pt;
   color: white;
 }
 
