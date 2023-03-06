@@ -5,228 +5,228 @@
 
 
 .about {
- 
-    // padding-top: $headerHeight/3;
 
-    position: relative;
+   // padding-top: $headerHeight/3;
 
-    .block {
-        border-radius: 0 0 $borderRounding $borderRounding;
+   position: relative;
 
-        background-color: white;
+   .block {
+      border-radius: 0 0 $borderRounding $borderRounding;
 
-        width: $ticketWidth;
-        height: $ticketHeight;
+      background-color: white;
 
-        margin: 0 calc(50% - $ticketWidth/2);
-        padding: 0;
+      width: $ticketWidth;
+      height: $ticketHeight;
 
-
-        text-align: center;
-
-        z-index: -10;
-
-        position: relative;
-
-        h2 {
-            margin: 0 calc(50% - $ticketWidth/3);
-            padding-top: $ticketHeight/2 - 15px;
-            font-family: "agFuturaBold";
-        }
-
-        h1 {
-            margin: 0 calc(50% - $ticketWidth/3);
-            font-family: "agFuturaBold";
-            font-size: 43pt;
-            text-decoration: underline;
-        }
+      margin: 0 calc(50% - $ticketWidth/2);
+      padding: 0;
 
 
-        h3 {
-            margin: 0 calc(50% - $ticketWidth/3);
-            position: relative;
-            font-family: "agFutura";
-            font-size: 16pt;
-        }
+      text-align: center;
 
-        h3:after {
-            content: '';
-            position: absolute;
-            top: -120px;
-            left: -245px;
+      z-index: -10;
 
+      position: relative;
+
+      h2 {
+         margin: 0 calc(50% - $ticketWidth/3);
+         padding-top: $ticketHeight / 2 - 15px;
+         font-family: "agFuturaBold";
+      }
+
+      h1 {
+         margin: 0 calc(50% - $ticketWidth / 3);
+         font-family: "agFuturaBold";
+         font-size: 43pt;
+         text-decoration: underline;
+      }
+
+
+      h3 {
+         margin: 0 calc(50% - $ticketWidth / 3);
+         position: relative;
+         font-family: "agFutura";
+         font-size: 16pt;
+      }
+
+      h3:after {
+         content: '';
+         position: absolute;
+         top: -120px;
+         left: -245px;
+
+         width: 150px;
+         height: 150px;
+
+         background-image: url('../pics/1_planet.png');
+         background-size: cover;
+
+      }
+
+      h4 {
+         font-family: "agFuturaBold";
+         font-size: 51pt;
+         margin: 0;
+         padding: 0;
+         text-decoration: none;
+
+      }
+
+      .logoBNTUWithInfofmation {
+
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+
+         .bntuLogo {
             width: 150px;
-            height: 150px;
+            height: 181px;
 
-            background-image: url('../pics/1_planet.png');
+            margin: auto;
+
+            background-image: url('../pics/logo\ BNTY.png');
             background-size: cover;
+         }
 
-        }
-
-        h4 {
+         .info {
             font-family: "agFuturaBold";
-            font-size: 51pt;
+            font-size: 27px;
             margin: 0;
             padding: 0;
             text-decoration: none;
+         }
 
-        }
+         //logoBNTUWithInfofmation
+      }
 
-        .logoBNTUWithInfofmation {
+      .logoBNTUWithInfofmation::after {
+         content: '';
+         position: absolute;
+         top: 770px;
+         left: 780px;
 
-            display: grid;
-            grid-template-columns: 1fr 2fr;
+         width: 150px;
+         height: 150px;
 
-            .bntuLogo {
-                width: 150px;
-                height: 181px;
+         background-image: url('../pics/1_planet.png');
+         background-size: cover;
+      }
 
-                margin: auto;
+      .logoBNTUWithInfofmation::before {
+         content: '';
+         position: absolute;
+         top: 680px;
+         left: 660px;
 
-                background-image: url('../pics/logo\ BNTY.png');
-                background-size: cover;
-            }
+         width: 190px;
+         height: 190px;
 
-            .info {
-                font-family: "agFuturaBold";
-                font-size: 27px;
-                margin: 0;
-                padding: 0;
-                text-decoration: none;
-            }
+         background-image: url('../pics/2_planet.png');
+         background-size: cover;
+      }
 
-            //logoBNTUWithInfofmation
-        }
+      //block
+   }
 
-        .logoBNTUWithInfofmation::after {
-            content: '';
-            position: absolute;
-            top: 770px;
-            left: 780px;
+   //цветной фон под текстом
+   .block::after {
+      content: '';
+      position: absolute;
 
-            width: 150px;
-            height: 150px;
+      width: 508px;
+      height: 518px;
 
-            background-image: url('../pics/1_planet.png');
-            background-size: cover;
-        }
+      top: 84px;
+      left: 72px;
+      background-image: url(../pics/1_fon.png);
+      background-size: cover;
+      background-repeat: no-repeat;
 
-        .logoBNTUWithInfofmation::before {
-            content: '';
-            position: absolute;
-            top: 680px;
-            left: 660px;
+      z-index: -1;
+   }
 
-            width: 190px;
-            height: 190px;
+   .idea {
+      border-radius: 0 $borderRounding*2 $borderRounding $borderRounding;
+      border-bottom: 2px solid #191D2F;
+      background-color: white;
 
-            background-image: url('../pics/2_planet.png');
-            background-size: cover;
-        }
+      width: $ticketWidth;
+      height: $ticketHeight + 60px;
 
-        //block
-    }
+      margin: $ticketHeight calc(50% - $ticketWidth / 2);
+      margin-bottom: 0;
+      padding-top: 0;
 
-    //цветной фон под текстом
-    .block::after {
-        content: '';
-        position: absolute;
+      z-index: -10;
 
-        width: 508px;
-        height: 518px;
+      position: relative;
 
-        top: 84px;
-        left: 72px;
-        background-image: url(../pics/1_fon.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+      h1 {
+         font-family: "agFuturaBold";
+         font-size: 27pt;
+         padding: 0 60px;
+         margin: 0;
+         margin-bottom: 15px;
+      }
 
-        z-index: -1;
-    }
+      p {
+         font-family: "agFutura";
+         font-size: 16pt;
+         padding: 0 60px;
+         margin: 0;
+         margin-bottom: 15px;
+      }
 
-    .idea {
-        border-radius: 0 $borderRounding*2 $borderRounding $borderRounding;
-        border-bottom: 2px solid #191D2F;
-        background-color: white;
 
-        width: $ticketWidth;
-        height: $ticketHeight + 60px;
+      .yearsInFrame {
+         position: absolute;
 
-        margin: $ticketHeight calc(50% - $ticketWidth/2);
-        margin-bottom: 0;
-        padding-top: 0;
+         width: 2 * $ticketWidth / 3;
+         height: 60px;
 
-        z-index: -10;
+         top: 330px;
+         left: 235px;
 
-        position: relative;
+         border: 2px solid #191D2F;
 
-        h1 {
+         border-radius: $borderRounding 0 0 $borderRounding;
+         border-right: 0;
+         border-right-style: none;
+         border-bottom-style: none;
+
+         h1 {
             font-family: "agFuturaBold";
             font-size: 27pt;
-            padding: 0 60px;
-            margin: 0;
-            margin-bottom: 15px;
-        }
+            padding: 10px 60px;
+            color: #191D2F;
+            margin: auto;
 
-        p {
-            font-family: "agFutura";
-            font-size: 16pt;
-            padding: 0 60px;
-            margin: 0;
-            margin-bottom: 15px;
-        }
-
-
-        .yearsInFrame {
-            position: absolute;
-
-            width: 2*$ticketWidth/3;
-            height: 60px;
-
-            top: 330px;
-            left: 235px;
-
-            border: 2px solid #191D2F;
-            ;
-            border-radius: $borderRounding 0 0 $borderRounding;
-            border-right: 0;
-            border-right-style: none;
-            border-bottom-style: none;
-
-            h1 {
-                font-family: "agFuturaBold";
-                font-size: 27pt;
-                padding: 10px 60px;
-                color: #191D2F;
-                margin: auto;
-
-                span {
-                    color: #87878a;
-                }
+            span {
+               color: #87878a;
             }
+         }
 
-        }
+      }
 
-    }
+   }
 
-    //about
+   //about
 }
 
 //белый блок под block
 .about::before {
-    z-index: -10;
-    content: '';
-    position: absolute;
+   z-index: -10;
+   content: '';
+   position: absolute;
 
-    width: 400px;
-    height: 410px;
+   width: 400px;
+   height: 410px;
 
-    top: 330px;
-    left: calc(50% - $ticketWidth/2);
+   top: 330px;
+   left: calc(50% - $ticketWidth / 2);
 
-    border-radius: $borderRounding $borderRounding $borderRounding*2 0;
+   border-radius: $borderRounding $borderRounding $borderRounding*2 0;
 
-    background-color: white;
-    width: $ticketWidth;
-    height: $ticketHeight;
+   background-color: white;
+   width: $ticketWidth;
+   height: $ticketHeight;
 }
