@@ -676,4 +676,22 @@ footer .footerWrapper .infoFooter p {
   padding-top: 150px;
 }
 
+main {
+  font-family: "agFuturaBold";
+  padding-top: 120px;
+}
+main section.ticket {
+  background-color: #fff;
+  border-radius: 30px;
+  max-width: 600px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about .idea {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */

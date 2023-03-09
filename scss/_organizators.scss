@@ -3,71 +3,71 @@
 
 .organizators {
 
-    min-height: $ticketHeight;
-    // width: $ticketWidth;
+   min-height: $ticketHeight;
+   // width: $ticketWidth;
 
-    background-color: #10162e;
-    // margin: 20px calc(50% - $ticketWidth/2);
-    padding-top: 20px;
-    text-align: center;
+   background-color: #10162e;
+   // margin: 20px calc(50% - $ticketWidth/2);
+   padding-top: 20px;
+   text-align: center;
 
-    // border-radius: $borderRounding;
+   // border-radius: $borderRounding;
 
-    h1 {
-        font-family: "agFuturaBold";
-        font-size: 27pt;
-        color: white;
-    }
+   h1 {
+      font-family: "agFuturaBold";
+      font-size: 27pt;
+      color: white;
+   }
 
-    .organizatorsWrapper {
+   .organizatorsWrapper {
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
 
-        padding: 0 60px;
+      padding: 0 60px;
 
 
-        .organizator {
-            display: flex;
-            flex-direction: column;
+      .organizator {
+         display: flex;
+         flex-direction: column;
 
-            .organizatorPicture {
+         .organizatorPicture {
 
-                height: 200px;
-                width: 200px;
+            height: 200px;
+            width: 200px;
 
-                border: 1px solid #fff;
-                border-radius: 50%;
+            border: 1px solid #fff;
+            border-radius: 50%;
 
-                margin-left: 100px;
+            margin-left: 100px;
+         }
+
+         .organizatorInformation {
+
+            min-height: 240px;
+            width: 390px;
+
+            .organizatorName {
+               font-family: "agFuturaBold";
+               font-size: 14pt;
+               color: white;
             }
 
-            .organizatorInformation {
-
-                min-height: 240px;
-                width: 390px;
-
-                .organizatorName {
-                    font-family: "agFuturaBold";
-                    font-size: 14pt;
-                    color: white;
-                }
-
-                .organizatorRole {
-                    font-family: "agFutura";
-                    font-size: 12pt;
-                    color: rgb(200, 198, 198);
-                }
-
-                .organizatorDescription {
-                    font-family: "agFutura";
-                    font-size: 14pt;
-                    color: white;
-                }
+            .organizatorRole {
+               font-family: "agFutura";
+               font-size: 12pt;
+               color: rgb(200, 198, 198);
             }
-        }
-    }
+
+            .organizatorDescription {
+               font-family: "agFutura";
+               font-size: 14pt;
+               color: white;
+            }
+         }
+      }
+   }
 
 }

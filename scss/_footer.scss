@@ -1,50 +1,51 @@
 @import "_fonts";
 @import "_parameters";
 
-footer{ 
+footer {
 
-    .footerWrapper{
-        padding: 0;
-        // margin-top: 30px;
+   .footerWrapper {
+      padding: 0;
+      // margin-top: 30px;
 
-        background-color: #131726;
+      background-color: #131726;
 
-        height: $footerHeight;
+      height: $footerHeight;
 
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
 
-        .logoHackatonFooter{
-            width: calc(951px/3);
-            height: calc(214px/3);
+      .logoHackatonFooter {
+         width: calc(951px/3);
+         height: calc(214px/3);
 
-            margin: auto;
+         margin: auto;
 
-            background-image: url('../pics/logo_b.png');
-            background-size: cover;
-        }
+         background-image: url('../pics/logo_b.png');
+         background-size: cover;
+      }
 
-        .infoFooter{
-            margin: auto;
+      .infoFooter {
+         margin: auto;
 
-            h1{
-                font-family: "agFuturaBold";
-                font-size: 36px;
-                margin: 0;
-                padding: 0;
-                text-decoration: none;
-                color: white;
-            }
-            p{
-                font-family: "agFutura";
-                font-size: 27px;
-                margin: 0;
-                padding: 0;
-                text-decoration: none;
-                color: white;
-            }
-        }
+         h1 {
+            font-family: "agFuturaBold";
+            font-size: 36px;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: white;
+         }
 
-    }
+         p {
+            font-family: "agFutura";
+            font-size: 27px;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: white;
+         }
+      }
+
+   }
 
 }

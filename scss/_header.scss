@@ -3,58 +3,58 @@
 
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #191D2F;
+   padding: 0;
+   margin: 0;
+   background-color: #191D2F;
 }
 
 header {
-    width: 100%;
-    height: $headerHeight;
-    position: fixed;
-    background-image: url('../pics/космос.png');
-    background-size: cover;
-    z-index: 100;
+   width: 100%;
+   height: $headerHeight;
+   position: fixed;
+   background-image: url('../pics/космос.png');
+   background-size: cover;
+   z-index: 100;
 
-    nav {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-
-
-        .hackatonLogo {
-
-            height: $headerHeight;
-            background-image: url('../pics/logo_v.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-left: 15%;
+   nav {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
 
 
-        }
+      .hackatonLogo {
 
-        ul {
-            display: flex;
-            justify-content: space-around;
+         height: $headerHeight;
+         background-image: url('../pics/logo_v.png');
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+         margin-left: 15%;
+
+
+      }
+
+      ul {
+         display: flex;
+         justify-content: space-around;
+         color: white;
+         list-style: none;
+         padding: calc($headerHeight/3);
+         font-family: "agFutura";
+         font-size: 14pt;
+
+         a {
+            text-decoration: none;
             color: white;
             list-style: none;
             padding: calc($headerHeight/3);
             font-family: "agFutura";
-            font-size: 14pt;
 
-            a {
-                text-decoration: none;
-                color: white;
-                list-style: none;
-                padding: calc($headerHeight/3);
-                font-family: "agFutura";
+         }
+      }
 
-            }
-        }
-
-        ul>li:hover {
-            cursor: pointer;
-            font-size: 18pt;
-        }
-    }
+      ul>li:hover {
+         cursor: pointer;
+         font-size: 18pt;
+      }
+   }
 }

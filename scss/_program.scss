@@ -3,162 +3,163 @@
 
 .program {
 
-    position: relative;
+   position: relative;
 
-    min-height: $ticketHeight;
-    width: $ticketWidth;
+   min-height: $ticketHeight;
+   width: $ticketWidth;
 
-    background-color: white;
-    margin: 20px calc(50% - $ticketWidth/2);
-    margin-bottom: 0;
-    padding: 20px 0;
-    
-    text-align: center;
+   background-color: white;
+   margin: 20px calc(50% - $ticketWidth/2);
+   margin-bottom: 0;
+   padding: 20px 0;
 
-    border-radius: $borderRounding $borderRounding 0 0;
+   text-align: center;
 
-    h1 {
-        font-family: "agFuturaBold";
-        font-size: 27pt;
-    }
+   border-radius: $borderRounding $borderRounding 0 0;
 
-    .day {
+   h1 {
+      font-family: "agFuturaBold";
+      font-size: 27pt;
+   }
 
-        .dayHeader {
+   .day {
+
+      .dayHeader {
+         text-align: left;
+         margin-left: 90px;
+
+         h2 {
+            font-family: "agFutura";
+            font-size: 27pt;
+
+            span {
+               font-family: "agFuturaBold";
+               font-size: 51pt;
+            }
+         }
+      }
+
+      .dayProgram {
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+
+         .timeDayProgram {
+            text-align: right;
+            font-family: "agFutura";
+            font-size: 14pt;
+
+            margin-right: 15px;
+         }
+
+         .activityDayProgram {
             text-align: left;
-            margin-left: 90px;
+            font-family: "agFutura";
+            font-size: 14pt;
 
-            h2 {
-                font-family: "agFutura";
-                font-size: 27pt;
+            padding-left: 15px;
 
-                span {
-                    font-family: "agFuturaBold";
-                    font-size: 51pt;
-                }
-            }
-        }
-
-        .dayProgram {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-
-            .timeDayProgram {
-                text-align: right;
-                font-family: "agFutura";
-                font-size: 14pt;
-
-                margin-right: 15px;
-            }
-
-            .activityDayProgram {
-                text-align: left;
-                font-family: "agFutura";
-                font-size: 14pt;
-
-                padding-left: 15px;
-
-                border-left: 1px solid  #191D2F;
-            }
-        }
+            border-left: 1px solid #191D2F;
+         }
+      }
 
 
 
-    }
+   }
 
 
-    //планетки
+   //планетки
 
-    .planet1 {
-        position: absolute;
-        top: -229px;
-        left: 792px;
+   .planet1 {
+      position: absolute;
+      top: -229px;
+      left: 792px;
 
-        width: 100px;
-        height: 100px;
+      width: 100px;
+      height: 100px;
 
-        background-image: url('../pics/2_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
-    .planet2 {
-        position: absolute;
-        top: 229px;
-        left: -210px;
+      background-image: url('../pics/2_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
-        width: 100px;
-        height: 100px;
+   .planet2 {
+      position: absolute;
+      top: 229px;
+      left: -210px;
 
-        background-image: url('../pics/1_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
+      width: 100px;
+      height: 100px;
+
+      background-image: url('../pics/1_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
 
-    .planet3 {
-        position: absolute;
-        top: 1025px;
-        left: -102px;
+   .planet3 {
+      position: absolute;
+      top: 1025px;
+      left: -102px;
 
-        width: 150px;
-        height: 150px;
+      width: 150px;
+      height: 150px;
 
-        background-image: url('../pics/2_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
+      background-image: url('../pics/2_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
-    .planet4 {
-        position: absolute;
-        top: 1440px;
-        left: 747px;
+   .planet4 {
+      position: absolute;
+      top: 1440px;
+      left: 747px;
 
-        width: 130px;
-        height: 130px;
+      width: 130px;
+      height: 130px;
 
-        background-image: url('../pics/2_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
+      background-image: url('../pics/2_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
-    .planet5 {
-        position: absolute;
-        top: 770px;
-        left: 900px;
+   .planet5 {
+      position: absolute;
+      top: 770px;
+      left: 900px;
 
-        width: 100px;
-        height: 100px;
+      width: 100px;
+      height: 100px;
 
-        background-image: url('../pics/1_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
+      background-image: url('../pics/1_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
-    .planet6 {
-        position: absolute;
-        top: 770px;
-        left: 900px;
+   .planet6 {
+      position: absolute;
+      top: 770px;
+      left: 900px;
 
-        width: 100px;
-        height: 100px;
+      width: 100px;
+      height: 100px;
 
-        background-image: url('../pics/1_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
+      background-image: url('../pics/1_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
-    .planet7 {
-        position: absolute;
-        top: 770px;
-        left: 900px;
+   .planet7 {
+      position: absolute;
+      top: 770px;
+      left: 900px;
 
-        width: 100px;
-        height: 100px;
+      width: 100px;
+      height: 100px;
 
-        background-image: url('../pics/1_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
+      background-image: url('../pics/1_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
 
 }

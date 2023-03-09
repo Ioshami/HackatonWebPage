@@ -1,223 +1,223 @@
 .questions {
 
-    margin: 0;
-    padding: 0;
-    position: relative;
+   margin: 0;
+   padding: 0;
+   position: relative;
 
 
 
-    .generalBlock {
-        background-color: white;
-        margin: 0 calc(50% - $ticketWidth/2);
+   .generalBlock {
+      background-color: white;
+      margin: 0 calc(50% - $ticketWidth/2);
 
-        border-radius: $borderRounding;
+      border-radius: $borderRounding;
 
-        padding: 0;
-    }
+      padding: 0;
+   }
 
-    .blockBorderRadiusNoRoundingAtBottomLeft {
-        border-bottom-left-radius: 0;
-    }
+   .blockBorderRadiusNoRoundingAtBottomLeft {
+      border-bottom-left-radius: 0;
+   }
 
-    .blockBorderRadiusNoRoundingAtTopLeft {
-        border-top-left-radius: 0;
-    }
+   .blockBorderRadiusNoRoundingAtTopLeft {
+      border-top-left-radius: 0;
+   }
 
-    .question {
+   .question {
 
-        margin: 0 calc(50% - $ticketWidth/2);
-        // padding: 20px 60px;
+      margin: 0 calc(50% - $ticketWidth/2);
+      // padding: 20px 60px;
 
-        h1 {
-            font-family: "agFuturaBold";
-            font-size: 27pt;
-            padding: 20px 60px;
-            margin: 0;
+      h1 {
+         font-family: "agFuturaBold";
+         font-size: 27pt;
+         padding: 20px 60px;
+         margin: 0;
 
 
-        }
+      }
 
-        p {
+      p {
+         font-family: "agFutura";
+         font-size: 16pt;
+         padding: 0 60px;
+         margin: 0;
+         padding-bottom: 15px;
+      }
+
+      .lastBlock {
+         height: 200px;
+         width: $ticketWidth;
+
+         .logoHackaton {
+            height: 107px;
+            width: 475px;
+            background-image: url('../pics/logo_b.png');
+            background-size: cover;
+            margin: auto;
+            margin-top: 40px;
+         }
+
+         // padding: 20px 60px;
+
+         // background-image: url('../pics/logo_b.png');
+         // background-size: cover;
+      }
+   }
+
+   .blockWhatIsHackaton {
+      position: relative;
+
+      .halfCircle {
+         position: absolute;
+
+         height: 160px;
+         width: 160px;
+
+         top: 205px;
+         left: 613px;
+
+         border: 10px solid #191D2F;
+         border-radius: 50%;
+
+         background-color: #191D2F;
+      }
+   }
+
+   .blockWhyHackaton {
+      position: relative;
+
+      .halfCircle {
+         position: absolute;
+
+         height: 120px;
+         width: 120px;
+
+         top: 175px;
+         left: 648px;
+
+         border: 10px solid #191D2F;
+         border-radius: 50%;
+
+         background-color: #191D2F;
+
+      }
+
+
+   }
+
+   .blockWhyHold {
+      position: relative;
+      z-index: 10;
+
+      border-bottom: 2px solid #191D2F;
+
+      .fon {
+         position: absolute;
+
+         width: 499px;
+         height: 304px;
+
+         top: -17px;
+         left: 0;
+         background-image: url(../pics/2_fon.png);
+         background-size: cover;
+         background-repeat: no-repeat;
+         z-index: -1;
+      }
+   }
+
+   .blockWhatCanILearn {
+      position: relative;
+      z-index: 10;
+
+      ul {
+         padding: 0 60px;
+
+         li {
             font-family: "agFutura";
             font-size: 16pt;
-            padding: 0 60px;
+            // padding: 0 60px;
             margin: 0;
             padding-bottom: 15px;
-        }
-
-        .lastBlock {
-            height: 200px;
-            width: $ticketWidth;
-
-            .logoHackaton {
-                height: 107px;
-                width: 475px;
-                background-image: url('../pics/logo_b.png');
-                background-size: cover;
-                margin: auto;
-                margin-top: 40px;
-            }
-
-            // padding: 20px 60px;
-
-            // background-image: url('../pics/logo_b.png');
-            // background-size: cover;
-        }
-    }
-
-    .blockWhatIsHackaton {
-        position: relative;
-
-        .halfCircle {
-            position: absolute;
-
-            height: 160px;
-            width: 160px;
-
-            top: 205px;
-            left: 613px;
-
-            border: 10px solid #191D2F;
-            border-radius: 50%;
-
-            background-color: #191D2F;
-        }
-    }
-
-    .blockWhyHackaton {
-        position: relative;
-
-        .halfCircle {
-            position: absolute;
-
-            height: 120px;
-            width: 120px;
-
-            top: 175px;
-            left: 648px;
-
-            border: 10px solid #191D2F;
-            border-radius: 50%;
-
-            background-color: #191D2F;
-
-        }
+         }
+      }
 
 
-    }
+      .fon {
+         position: absolute;
 
-    .blockWhyHold {
-        position: relative;
-        z-index: 10;
+         width: 622px;
+         height: 633px;
 
-        border-bottom: 2px solid #191D2F;
-
-        .fon {
-            position: absolute;
-
-            width: 499px;
-            height: 304px;
-
-            top: -17px;
-            left: 0;
-            background-image: url(../pics/2_fon.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-    }
-
-    .blockWhatCanILearn {
-        position: relative;
-        z-index: 10;
-
-        ul {
-            padding: 0 60px;
-
-            li {
-                font-family: "agFutura";
-                font-size: 16pt;
-                // padding: 0 60px;
-                margin: 0;
-                padding-bottom: 15px;
-            }
-        }
-
-
-        .fon {
-            position: absolute;
-
-            width: 622px;
-            height: 633px;
-
-            top: -1px;
-            left: 36px;
-            background-image: url(../pics/1_fon.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index: -1;
+         top: -1px;
+         left: 36px;
+         background-image: url(../pics/1_fon.png);
+         background-size: cover;
+         background-repeat: no-repeat;
+         z-index: -1;
 
 
 
-        }
+      }
 
-    }
+   }
 
 
-    .planet1 {
-        position: absolute;
-        top: 770px;
-        left: 900px;
+   .planet1 {
+      position: absolute;
+      top: 770px;
+      left: 900px;
 
-        width: 100px;
-        height: 100px;
+      width: 100px;
+      height: 100px;
 
-        background-image: url('../pics/1_planet.png');
-        background-size: cover;
-        z-index: -1;
-    }
+      background-image: url('../pics/1_planet.png');
+      background-size: cover;
+      z-index: -1;
+   }
 
-    .planet2 {
-        position: absolute;
-        top: 466px;
-        left: 60px;
+   .planet2 {
+      position: absolute;
+      top: 466px;
+      left: 60px;
 
-        width: 150px;
-        height: 150px;
+      width: 150px;
+      height: 150px;
 
-        z-index: -1;
+      z-index: -1;
 
-        background-image: url('../pics/3_planet.png');
-        background-size: cover;
-    }
+      background-image: url('../pics/3_planet.png');
+      background-size: cover;
+   }
 
-    .planet3 {
-        position: absolute;
-        top: 113px;
-        left: 23px;
+   .planet3 {
+      position: absolute;
+      top: 113px;
+      left: 23px;
 
-        width: 150px;
-        height: 150px;
+      width: 150px;
+      height: 150px;
 
-        z-index: -1;
+      z-index: -1;
 
-        background-image: url('../pics/2_planet.png');
-        background-size: cover;
-    }
+      background-image: url('../pics/2_planet.png');
+      background-size: cover;
+   }
 
-    .planet4 {
-        position: absolute;
-        top: 370px;
-        left: 930px;
+   .planet4 {
+      position: absolute;
+      top: 370px;
+      left: 930px;
 
-        width: 150px;
-        height: 150px;
+      width: 150px;
+      height: 150px;
 
-        z-index: -1;
+      z-index: -1;
 
-        background-image: url('../pics/2_planet.png');
-        background-size: cover;
-    }
+      background-image: url('../pics/2_planet.png');
+      background-size: cover;
+   }
 
 
 
