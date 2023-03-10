@@ -687,6 +687,11 @@ main section.ticket {
   padding: 30px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "agFutura";
+  font-size: 16pt;
+  background-image: url(../pics/1_fon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about .idea {
