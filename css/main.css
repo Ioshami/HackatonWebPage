@@ -494,7 +494,7 @@ footer .footerWrapper .infoFooter p {
 .organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorRole {
   font-family: "agFutura";
   font-size: 12pt;
-  color: #c8c6c6;
+  color: rgb(200, 198, 198);
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorDescription {
   font-family: "agFutura";
