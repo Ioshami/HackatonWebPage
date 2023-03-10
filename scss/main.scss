@@ -2,9 +2,9 @@
 @import "_footer";
 
 @import "fonts";
-@import "_about";
+// @import "_about";
 @import "_parameters";
-@import "_questions";
+// @import "_questions";
 @import "_organizators";
 @import "_program";
 
@@ -17,8 +17,37 @@ main {
 
    position: relative;
 
+   #mainTitleText {
+      font-family: "agFuturaBold";
+      font-size: 47pt;
+      text-align: center;
+   }
+
+   #mottoText {
+      font-size: 24pt;
+      text-align: center;
+      margin-bottom: 0;
+
+   }
+
+   #periodText {
+      font-size: 47pt;
+      font-family: "agFuturaBold";
+      text-decoration: underline;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   #titleText {
+      font-size: 18pt;
+      text-align: center;
+      margin-top: 10px;
+   }
+
+
    section.ticket {
-      margin-top: 2px;
+      margin-top: 1px;
       position: relative;
       background-color: #fff;
       border-radius: 30px;
@@ -29,18 +58,47 @@ main {
 
       font-family: "agFutura";
       font-size: 16pt;
-      background-image: url(../pics/1_fon.png);
-      background-size: cover;
-      background-repeat: no-repeat;
+      // background-image: url(../pics/1_fon.png);
+      // background-size: cover;
+      // background-repeat: no-repeat;
 
       .yearsInFrame {
          position: absolute;
-         right: 30px;
+         right: 0px;
          bottom: 0px;
+
+         border: 2px solid #191D2F;
+
+         border-radius: $borderRounding 0 0 $borderRounding;
+         border-right: 0;
+         border-right-style: none;
+         border-bottom-style: none;
+
+         p {
+            font-family: "agFuturaBold";
+            font-size: 27pt;
+            padding: 10px 60px;
+            color: #191D2F;
+            margin: auto;
+
+            span {
+               color: #87878a;
+            }
+         }
       }
 
       &#about {
          padding-bottom: 75px;
+      }
+
+      .bntuLogo {
+         width: 150px;
+         height: 181px;
+
+         margin: auto;
+
+         background-image: url('../pics/logo\ BNTY.png');
+         background-size: cover;
       }
    }
 }
@@ -48,4 +106,10 @@ main {
 .about .idea {
    margin-top: 0;
    padding-top: 30px;
+}
+
+.titleTicket {
+   background-image: url(../pics/1_fon.png);
+   background-size: cover;
+   background-repeat: no-repeat;
 }
