@@ -679,12 +679,15 @@ footer .footerWrapper .infoFooter p {
 main {
   font-family: "agFuturaBold";
   padding-top: 120px;
+  position: relative;
 }
 main section.ticket {
+  margin-top: 2px;
+  position: relative;
   background-color: #fff;
   border-radius: 30px;
   max-width: 600px;
-  padding: 30px;
+  padding: 30px 60px 60px;
   margin-left: auto;
   margin-right: auto;
   font-family: "agFutura";
@@ -692,6 +695,14 @@ main section.ticket {
   background-image: url(../pics/1_fon.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+main section.ticket .yearsInFrame {
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+}
+main section.ticket#about {
+  padding-bottom: 75px;
 }
 
 .about .idea {

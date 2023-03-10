@@ -15,11 +15,15 @@ main {
 
    padding-top: 120px;
 
+   position: relative;
+
    section.ticket {
+      margin-top: 2px;
+      position: relative;
       background-color: #fff;
       border-radius: 30px;
       max-width: 600px;
-      padding: 30px;
+      padding: 30px 60px 60px;
       margin-left: auto;
       margin-right: auto;
 
@@ -28,6 +32,16 @@ main {
       background-image: url(../pics/1_fon.png);
       background-size: cover;
       background-repeat: no-repeat;
+
+      .yearsInFrame {
+         position: absolute;
+         right: 30px;
+         bottom: 0px;
+      }
+
+      &#about {
+         padding-bottom: 75px;
+      }
    }
 }
 
