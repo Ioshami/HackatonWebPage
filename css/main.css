@@ -169,7 +169,7 @@ footer .footerWrapper .infoFooter p {
 .organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorRole {
   font-family: "agFutura";
   font-size: 12pt;
-  color: rgb(200, 198, 198);
+  color: #c8c6c6;
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorDescription {
   font-family: "agFutura";
@@ -263,6 +263,11 @@ main #periodText {
   margin-top: 0;
   margin-bottom: 0;
 }
+@media (max-width: 640px) {
+  main #periodText {
+    font-size: 30pt;
+  }
+}
 main #titleText {
   font-size: 18pt;
   text-align: center;
@@ -279,6 +284,12 @@ main section.ticket {
   margin-right: auto;
   font-family: "agFutura";
   font-size: 16pt;
+}
+@media (max-width: 640px) {
+  main section.ticket {
+    padding: 20px 30px 40px;
+    font-size: 12pt;
+  }
 }
 main section.ticket .yearsInFrame {
   position: absolute;
@@ -297,6 +308,11 @@ main section.ticket .yearsInFrame p {
   color: #191D2F;
   margin: auto;
 }
+@media (max-width: 640px) {
+  main section.ticket .yearsInFrame p {
+    font-size: 16pt;
+  }
+}
 main section.ticket .yearsInFrame p span {
   color: #87878a;
 }
@@ -307,7 +323,7 @@ main section.ticket .bntuLogo {
   width: 150px;
   height: 181px;
   margin: auto;
-  background-image: url("../pics/logo BNTY.png");
+  background-image: url("../pics/logo_lyceym_BNTU.png");
   background-size: cover;
 }
 
@@ -348,6 +364,40 @@ main section.ticket .bntuLogo {
   top: 0px;
   left: 72px;
   position: absolute;
+}
+
+.footerWrapper {
+  height: inherit;
+}
+.footerWrapper p {
+  padding-top: 60px;
+  color: white;
+  font-family: "agFutura";
+}
+@media (max-width: 640px) {
+  .footerWrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+section.organizators {
+  padding: 12px;
+}
+
+.organizators .organizatorsWrapper .organizator .organizatorInformation {
+  width: inherit;
+}
+
+.organizators .organizatorsWrapper .organizator .organizatorPicture {
+  margin-left: inherit;
+}
+
+.organizators .organizatorsWrapper .organizator {
+  align-items: center;
+}
+
+.organizators .organizatorsWrapper {
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

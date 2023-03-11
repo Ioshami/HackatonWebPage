@@ -42,6 +42,10 @@ main {
       text-align: center;
       margin-top: 0;
       margin-bottom: 0;
+
+      @media (max-width: 640px) {
+         font-size: 30pt;
+      }
    }
 
    #titleText {
@@ -67,6 +71,11 @@ main {
       // background-size: cover;
       // background-repeat: no-repeat;
 
+      @media (max-width:640px) {
+         padding: 20px 30px 40px;
+         font-size: 12pt;
+      }
+
       .yearsInFrame {
          position: absolute;
          right: 0px;
@@ -86,6 +95,10 @@ main {
             color: #191D2F;
             margin: auto;
 
+            @media (max-width:640px) {
+               font-size: 16pt;
+            }
+
             span {
                color: #87878a;
             }
@@ -95,6 +108,10 @@ main {
       &#about {
          padding-bottom: 75px;
 
+         // @media (max-width: 640px) {
+         //    padding-bottom: 150px;
+         // }
+
       }
 
       .bntuLogo {
@@ -103,7 +120,7 @@ main {
 
          margin: auto;
 
-         background-image: url('../pics/logo\ BNTY.png');
+         background-image: url('../pics/logo_lyceym_BNTU.png');
          background-size: cover;
       }
    }
@@ -148,19 +165,58 @@ main {
 
          position: relative;
       }
+
       li::after {
          content: '';
          background: #080516;
          width: 2px;
          height: 100%;
-        
+
          top: 0px;
          left: 72px;
-        
+
          position: absolute;
       }
    }
 
-   
 
+
+}
+
+.footerWrapper {
+   height: inherit;
+
+   p {
+      padding-top: 60px;
+      color: white;
+      font-family: "agFutura";
+   }
+
+   @media (max-width:640px) {
+      grid-template-columns: 1fr !important;
+   }
+}
+
+section.organizators {
+   padding: 12px;
+}
+
+// >|<0ПА
+.organizators .organizatorsWrapper .organizator .organizatorInformation {
+   width: inherit;
+}
+
+// >|<0ПА-2
+.organizators .organizatorsWrapper .organizator .organizatorPicture {
+   margin-left: inherit;
+}
+
+// >|<0ПА-3
+.organizators .organizatorsWrapper .organizator {
+   align-items: center;
+}
+
+// >|<0ПА-4
+.organizators .organizatorsWrapper {
+   padding: 0;
 }
