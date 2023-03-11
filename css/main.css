@@ -56,6 +56,8 @@ header nav ul a {
 }
 header nav ul li {
   cursor: pointer;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 header nav ul > li:hover {
   font-weight: bold;
@@ -134,6 +136,7 @@ footer .footerWrapper .infoFooter p {
 .organizators {
   min-height: 330px;
   background-color: #10162e;
+  padding: 12px;
   padding-top: 20px;
   text-align: center;
 }
@@ -147,22 +150,20 @@ footer .footerWrapper .infoFooter p {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 60px;
 }
 .organizators .organizatorsWrapper .organizator {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .organizators .organizatorsWrapper .organizator .organizatorPicture {
   height: 200px;
   width: 200px;
   border: 1px solid #fff;
   border-radius: 50%;
-  margin-left: 100px;
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation {
   min-height: 240px;
-  width: 390px;
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorName {
   font-family: "agFuturaBold";
@@ -385,26 +386,6 @@ main section.ticket .bntuLogo {
   .footerWrapper {
     grid-template-columns: 1fr !important;
   }
-}
-
-section.organizators {
-  padding: 12px;
-}
-
-.organizators .organizatorsWrapper .organizator .organizatorInformation {
-  width: inherit;
-}
-
-.organizators .organizatorsWrapper .organizator .organizatorPicture {
-  margin-left: inherit;
-}
-
-.organizators .organizatorsWrapper .organizator {
-  align-items: center;
-}
-
-.organizators .organizatorsWrapper {
-  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

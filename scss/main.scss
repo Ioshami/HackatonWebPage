@@ -18,7 +18,7 @@ h2 {
 main {
    font-family: "agFuturaBold";
 
-   padding-top: 120px - 50px;
+   padding-top: $headerHeight - 30px;
 
    position: relative;
 
@@ -199,28 +199,4 @@ main {
    @media (max-width:640px) {
       grid-template-columns: 1fr !important;
    }
-}
-
-section.organizators {
-   padding: 12px;
-}
-
-// >|<0ПА
-.organizators .organizatorsWrapper .organizator .organizatorInformation {
-   width: inherit;
-}
-
-// >|<0ПА-2
-.organizators .organizatorsWrapper .organizator .organizatorPicture {
-   margin-left: inherit;
-}
-
-// >|<0ПА-3
-.organizators .organizatorsWrapper .organizator {
-   align-items: center;
-}
-
-// >|<0ПА-4
-.organizators .organizatorsWrapper {
-   padding: 0;
 }
