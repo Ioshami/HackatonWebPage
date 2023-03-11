@@ -13,7 +13,8 @@ header {
    height: $headerHeight;
    position: fixed;
    background-image: url('../pics/космос.png');
-   background-size: cover;
+   background-size: 100% 200%;
+
    z-index: 100;
 
    nav {
@@ -28,33 +29,40 @@ header {
          background-size: contain;
          background-repeat: no-repeat;
          background-position: center;
-         margin-left: 15%;
-
-
+         margin-left: 15px;
       }
 
       ul {
+         padding-inline-start: 0px;
+
          display: flex;
          justify-content: space-around;
+         align-content: center;
          color: white;
          list-style: none;
-         padding: calc($headerHeight/3);
+         // padding: calc($headerHeight/3);
+
          font-family: "agFutura";
          font-size: 14pt;
+
+         flex-wrap: wrap;
 
          a {
             text-decoration: none;
             color: white;
             list-style: none;
-            padding: calc($headerHeight/3);
+            // padding: calc($headerHeight/3);
             font-family: "agFutura";
+         }
 
+         li {
+            cursor: pointer;
          }
       }
 
       ul>li:hover {
-         cursor: pointer;
-         font-size: 18pt;
+         // font-size: 18pt;
+         font-weight: bold;
       }
    }
 }

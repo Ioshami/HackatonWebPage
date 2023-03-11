@@ -19,10 +19,10 @@ body {
 
 header {
   width: 100%;
-  height: 150px;
+  height: 100px;
   position: fixed;
   background-image: url("../pics/космос.png");
-  background-size: cover;
+  background-size: 100% 200%;
   z-index: 100;
 }
 header nav {
@@ -30,32 +30,35 @@ header nav {
   grid-template-columns: 1fr 3fr;
 }
 header nav .hackatonLogo {
-  height: 150px;
+  height: 100px;
   background-image: url("../pics/logo_v.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 15%;
+  margin-left: 15px;
 }
 header nav ul {
+  padding-inline-start: 0px;
   display: flex;
   justify-content: space-around;
+  align-content: center;
   color: white;
   list-style: none;
-  padding: 50px;
   font-family: "agFutura";
   font-size: 14pt;
+  flex-wrap: wrap;
 }
 header nav ul a {
   text-decoration: none;
   color: white;
   list-style: none;
-  padding: 50px;
   font-family: "agFutura";
 }
-header nav ul > li:hover {
+header nav ul li {
   cursor: pointer;
-  font-size: 18pt;
+}
+header nav ul > li:hover {
+  font-weight: bold;
 }
 
 @font-face {
@@ -211,10 +214,10 @@ section#program h1 span {
   font-family: "agFuturaBold";
   font-size: 27pt;
   color: white;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 .yearGalery .yearWrapper {
-  padding-top: 37.5px;
+  padding-top: 25px;
 }
 .yearGalery .yearWrapper .yearPhotos {
   padding: 0 60px;
@@ -233,7 +236,7 @@ section#program h1 span {
 }
 
 .year2021Wrapper {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 h2 {
@@ -242,7 +245,7 @@ h2 {
 
 main {
   font-family: "agFuturaBold";
-  padding-top: 120px;
+  padding-top: 70px;
   position: relative;
 }
 main #mainTitleText {
