@@ -6,9 +6,14 @@
 @import "_parameters";
 // @import "_questions";
 @import "_organizators";
+// @import "_program_old";
 @import "_program";
 
 @import "_galery";
+
+h2 {
+   font-family: "agFuturaBold";
+}
 
 main {
    font-family: "agFuturaBold";
@@ -89,6 +94,7 @@ main {
 
       &#about {
          padding-bottom: 75px;
+
       }
 
       .bntuLogo {
@@ -103,13 +109,58 @@ main {
    }
 }
 
-.about .idea {
-   margin-top: 0;
-   padding-top: 30px;
-}
+// .about .idea {
+//    margin-top: 0;
+//    padding-top: 30px;
+// }
 
 .titleTicket {
    background-image: url(../pics/1_fon.png);
    background-size: cover;
    background-repeat: no-repeat;
+}
+
+.program {
+   text-align: center;
+
+   // 
+   h1 {
+      margin-top: 40px;
+      text-align: left;
+      font-family: "agFutura";
+      font-size: 27pt;
+
+      span {
+         font-family: "agFuturaBold";
+         font-size: 51pt;
+      }
+   }
+
+   .day {
+      padding: 0;
+      text-align: left;
+
+      li {
+
+         display: grid;
+         grid-template-columns: 91px 1fr;
+         margin: 0;
+
+         position: relative;
+      }
+      li::after {
+         content: '';
+         background: #080516;
+         width: 2px;
+         height: 100%;
+        
+         top: 0px;
+         left: 72px;
+        
+         position: absolute;
+      }
+   }
+
+   
+
 }
