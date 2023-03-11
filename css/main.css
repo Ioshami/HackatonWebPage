@@ -194,6 +194,9 @@ section#program h1 span {
   font-size: 51pt;
 }
 
+main .planetContainer {
+  transition: 2s;
+}
 main .planetContainer .planetBrightPink {
   position: absolute;
   background-image: url("../pics/2_planet.png");
