@@ -20,6 +20,12 @@ header {
    nav {
       display: grid;
       grid-template-columns: 1fr 3fr;
+      
+      @media (max-width:390px) {
+         grid-template-columns: 0 1fr;
+         // grid-template-rows: 0fr 1fr;
+         
+      }
 
 
       .hackatonLogo {
@@ -30,6 +36,9 @@ header {
          background-repeat: no-repeat;
          background-position: center;
          margin-left: 15px;
+         // @media (max-width:390px) {
+         //    height: 30px;   
+         // }
       }
 
       ul {

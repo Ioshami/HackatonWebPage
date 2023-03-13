@@ -18,6 +18,7 @@ h2 {
 }
 
 main {
+   overflow-x: hidden;
    font-family: "agFuturaBold";
 
    padding-top: $headerHeight - 30px;
@@ -200,5 +201,13 @@ main {
 
    @media (max-width:640px) {
       grid-template-columns: 1fr !important;
+   }
+}
+
+
+@media (max-width:800px) {
+   .swiper-slide img {
+      width: 100vw;
+
    }
 }

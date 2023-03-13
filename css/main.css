@@ -29,6 +29,11 @@ header nav {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+@media (max-width: 390px) {
+  header nav {
+    grid-template-columns: 0 1fr;
+  }
+}
 header nav .hackatonLogo {
   height: 100px;
   background-image: url("../pics/logo_v.png");
@@ -174,7 +179,7 @@ footer .footerWrapper .infoFooter p {
 .organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorRole {
   font-family: "agFutura";
   font-size: 12pt;
-  color: rgb(200, 198, 198);
+  color: #c8c6c6;
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation .organizatorDescription {
   font-family: "agFutura";
@@ -386,6 +391,7 @@ h2 {
 }
 
 main {
+  overflow-x: hidden;
   font-family: "agFuturaBold";
   padding-top: 70px;
   position: relative;
@@ -526,6 +532,12 @@ main section.ticket .bntuLogo {
 @media (max-width: 640px) {
   .footerWrapper {
     grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .swiper-slide img {
+    width: 100vw;
   }
 }
 
