@@ -3,77 +3,84 @@
 
 
 body {
-   padding: 0;
-   margin: 0;
-   background-color: #191D2F;
+	padding: 0;
+	margin: 0;
+	background-color: #191D2F;
 }
 
 header {
-   width: 100%;
-   height: $headerHeight;
-   position: fixed;
-   background-image: url('../pics/космос.png');
-   background-size: 100% 200%;
+	width: 100%;
+	height: $headerHeight;
+	position: fixed;
+	top: 0;
+	background-image: url('../pics/космос.png');
+	background-size: 100% 200%;
 
-   z-index: 100;
+	z-index: 100;
 
-   nav {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      
-      @media (max-width:390px) {
-         grid-template-columns: 0 1fr;
-         // grid-template-rows: 0fr 1fr;
-         
-      }
+	nav {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+
+		@media (max-width:420px) {
+			grid-template-columns: 0 1fr;
+			// grid-template-rows: 0fr 1fr;
+
+		}
 
 
-      .hackatonLogo {
+		.hackatonLogo {
 
-         height: $headerHeight;
-         background-image: url('../pics/logo_v.png');
-         background-size: contain;
-         background-repeat: no-repeat;
-         background-position: center;
-         margin-left: 15px;
-         // @media (max-width:390px) {
-         //    height: 30px;   
-         // }
-      }
+			height: $headerHeight;
+			background-image: url('../pics/logo_v.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-left: 15px;
+			// @media (max-width:390px) {
+			//    height: 30px;   
+			// }
+		}
 
-      ul {
-         padding-inline-start: 0px;
+		ul {
+			padding-inline-start: 0px;
 
-         display: flex;
-         justify-content: space-around;
-         align-content: center;
-         color: white;
-         list-style: none;
-         // padding: calc($headerHeight/3);
+			display: flex;
+			justify-content: space-around;
+			align-content: center;
+			color: white;
+			list-style: none;
+			// padding: calc($headerHeight/3);
 
-         font-family: "agFutura";
-         font-size: 14pt;
+			font-family: "agFutura";
+			font-size: 14pt;
 
-         flex-wrap: wrap;
+			@media (max-width:420px) {
+				font-size: 11pt;
+				// grid-template-rows: 0fr 1fr;
 
-         a {
-            text-decoration: none;
-            color: white;
-            list-style: none;
-            // padding: calc($headerHeight/3);
-            font-family: "agFutura";
-         }
+			}
 
-         li {
-            cursor: pointer;
-            margin-left: 8px;
-            margin-right: 8px;
-         }
-      }
+			flex-wrap: wrap;
 
-      ul>li:hover {
-         // font-size: 18pt;
-         font-weight: bold;
-      }
-   }
+			a {
+				text-decoration: none;
+				color: white;
+				list-style: none;
+				// padding: calc($headerHeight/3);
+				font-family: "agFutura";
+			}
+
+			li {
+				cursor: pointer;
+				margin-left: 8px;
+				margin-right: 8px;
+			}
+		}
+
+		ul>li:hover {
+			// font-size: 18pt;
+			font-weight: bold;
+		}
+	}
 }

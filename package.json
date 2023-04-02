@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Ioshami/HackatonWebPage/issues"
   },
-  "homepage": "https://github.com/Ioshami/HackatonWebPage#readme"
+  "homepage": "https://github.com/Ioshami/HackatonWebPage#readme",
+  "dependencies": {
+    "lightgallery": "^2.7.1"
+  }
 }
