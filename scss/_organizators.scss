@@ -2,75 +2,107 @@
 @import "_parameters";
 
 .organizators {
+  min-height: $ticketHeight;
+  // width: $ticketWidth;
 
-   min-height: $ticketHeight;
-   // width: $ticketWidth;
+  background-color: #10162e;
+  // margin: 20px calc(50% - $ticketWidth/2);
+  padding: 12px;
+  padding-top: 20px;
+  text-align: center;
 
-   background-color: #10162e;
-   // margin: 20px calc(50% - $ticketWidth/2);
-   padding: 12px;
-   padding-top: 20px;
-   text-align: center;
+  // border-radius: $borderRounding;
 
-   // border-radius: $borderRounding;
+  h1 {
+    font-family: "agFuturaBold";
+    font-size: 27pt;
+    color: white;
+  }
 
-   h1 {
-      font-family: "agFuturaBold";
-      font-size: 27pt;
-      color: white;
-   }
+  .organizatorsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-   .organizatorsWrapper {
+    // padding: 0 60px;
 
+    .organizator {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      flex-direction: column;
 
-      // padding: 0 60px;
+      align-items: center;
 
+      .organizatorPicture {
+        height: 200px;
+        width: 200px;
 
-      .organizator {
-         display: flex;
-         flex-direction: column;
+        border: 1px solid #fff;
+        border-radius: 50%;
 
-         align-items: center;
+        // margin-left: 100px;
+        background-size: cover;
 
-         .organizatorPicture {
-
-            height: 200px;
-            width: 200px;
-
-            border: 1px solid #fff;
-            border-radius: 50%;
-
-            // margin-left: 100px;
-         }
-
-         .organizatorInformation {
-
-            min-height: 240px;
-            max-width: 420px;
-
-            .organizatorName {
-               font-family: "agFuturaBold";
-               font-size: 14pt;
-               color: white;
-            }
-
-            .organizatorRole {
-               font-family: "agFutura";
-               font-size: 12pt;
-               color: rgb(200, 198, 198);
-            }
-
-            .organizatorDescription {
-               font-family: "agFutura";
-               font-size: 14pt;
-               color: white;
-            }
-         }
+        &.strausau {
+          background-image: url("../pics/strausau1.jpg");
+        }
+        &.strausauA {
+          background-image: url("../pics/strausauA.jpg");
+        }
+        &.strausava {
+          background-image: url("../pics/strausava.jpg");
+        }
+        &.belocerkovskij {
+          background-image: url("../pics/belcerkovskij1.jpg");
+        }
+        &.makarevich {
+          background-image: url("../pics/makarevich.jpg");
+        }
+        &.director {
+          background-image: url("../pics/director.jpg");
+        }
+        &.balash {
+          background-image: url("../pics/balash1.jpg");
+        }
+        &.afanasiev {
+          background-image: url("../pics/afanasiev.jpg");
+        }
+        &.zavuch {
+          background-image: url("../pics/zavuch.jpg");
+        }
+        &.lenkova {
+          background-image: url("../pics/lenkova.jpg");
+        }
+        &.kovalskaja {
+          background-image: url("../pics/kovalskaja.jpg");
+        }
+        &.jana {
+          background-image: url("../pics/jana.jpg");
+        }
       }
-   }
 
+      .organizatorInformation {
+        min-height: 240px;
+        max-width: 420px;
+
+        .organizatorName {
+          font-family: "agFuturaBold";
+          font-size: 14pt;
+          color: white;
+        }
+
+        .organizatorRole {
+          font-family: "agFutura";
+          font-size: 12pt;
+          color: rgb(200, 198, 198);
+        }
+
+        .organizatorDescription {
+          font-family: "agFutura";
+          font-size: 14pt;
+          color: white;
+        }
+      }
+    }
+  }
 }

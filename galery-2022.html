@@ -26,7 +26,6 @@
 
 			<!--Главное меню-->
 			<ul>
-				<!-- !!! ДОБАВИТЬ ССЫЛКИ -->
 				<li>
 					<a href="index.html#about"> О ХАКАТОНЕ</a>
 				</li>
@@ -34,13 +33,7 @@
 					<a href="index.html#program">ПРОГРАММА</a>
 				</li>
 				<li>
-					<a href="galery-2023.html">ГАЛЕРЕЯ-2023</a>
-				</li>
-				<li>
-					<a href="galery-2022.html">ГАЛЕРЕЯ-2022</a>
-				</li>
-				<li>
-					<a href="galery-2021.html">ГАЛЕРЕЯ-2021</a>
+					<a href="galery.html">ГАЛЕРЕЯ 2021—2024</a>
 				</li>
 				<li>
 					<a href="index.html#organizators">ОРГАНИЗАТОРЫ</a>
@@ -49,10 +42,13 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="gallery">
+
 
 
 		<h1> МЫ — КОСМОС 2022</h1>
+		<p class="loading">Загружаем фото...</p>
+
 		<div class="gallery-container " id="animated-thumbnails-gallery">
 
 			<a href="pics/2022/2022pic1.jpg" class="gallery-item">
@@ -134,6 +130,7 @@
 	</main>
 
 
+	<script src="js/1.js"></script>
 
 	<!-- подвал -->
 	<footer>
@@ -156,37 +153,16 @@
 	<script src="js/plugins/zoom/lg-zoom.umd.js"></script>
 
 	<script type="text/javascript">
-		lightGallery( document.getElementById( 'animated-thumbnails-gallery' ), {
-			plugins: [ lgZoom, lgThumbnail ],
+		lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+			plugins: [lgZoom, lgThumbnail],
 			licenseKey: 'your_license_key',
 			// thumbnail: true,
 			speed: 500,
 			// ... other settings
-		} );
+		});
 	</script>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<style>
-		.gallery-item img {
-			width: 200px;
-			/* height: 100px; */
-			padding: 5px;
-		}
 
-		main {
-			padding-top: 100px;
-			color: white;
-			text-align: center;
-		}
-	</style>
-
-	<script>
-		var elem = document.querySelector( '.gallery-container' );
-		var msnry = new Masonry( elem, {
-			// options
-			itemSelector: '.gallery-item',
-			// columnWidth: 100
-		} );
-	</script>
 </body>
 
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QuizHackatonGalery</title>
+
+	<link rel="stylesheet" href="../css/main.css">
+
+	<link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
+
+
+</head>
+
+<body>
+	<!--Шапка-->
+	<header>
+		<nav>
+			<a href="#top">
+				<div class="hackatonLogo">
+
+				</div>
+			</a>
+
+			<!--Главное меню-->
+			<ul>
+				<li>
+					<a href="index.html#about"> О ХАКАТОНЕ</a>
+				</li>
+				<li>
+					<a href="index.html#program">ПРОГРАММА</a>
+				</li>
+				<li>
+					<a href="galery.html">ГАЛЕРЕЯ 2021—2024</a>
+				</li>
+				<li>
+					<a href="index.html#organizators">ОРГАНИЗАТОРЫ</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+
+		<h1> Фотогалереи</h1>
+
+		<ul class="galleries">
+
+			<li>
+				<a href="galery-2021.html">ГАЛЕРЕЯ 2021</a>
+			</li>
+			<li>
+				<a href="galery-2022.html">ГАЛЕРЕЯ 2022</a>
+			</li>
+			<li>
+				<a href="galery-2023.html">ГАЛЕРЕЯ 2023</a>
+			</li>
+			<li>
+				<a href="galery-2024.html">ГАЛЕРЕЯ 2024</a>
+			</li>
+
+		</ul>
+	</main>
+
+
+
+	<!-- подвал -->
+	<footer>
+		<div class="footerWrapper">
+			<div class="logoHackatonFooter">
+
+			</div>
+			<div class="infoFooter">
+				<h1>Контакты:</h1>
+				<p>+375 29 675 18 01</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/lightgallery.umd.js"></script>
+	<!-- Or use the minified version -->
+
+	<!-- lightgallery plugins -->
+	<script src="js/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+	<script src="js/plugins/zoom/lg-zoom.umd.js"></script>
+
+	<script type="text/javascript">
+		lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+			plugins: [lgZoom, lgThumbnail],
+			licenseKey: 'your_license_key',
+			// thumbnail: true,
+			speed: 500,
+			// ... other settings
+		});
+	</script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<style>
+		.gallery-item img {
+			width: 200px;
+			/* height: 100px; */
+			padding: 5px;
+		}
+
+		main {
+			padding-top: 100px;
+			color: white;
+			text-align: center;
+		}
+	</style>
+
+	<script>
+		var elem = document.querySelector('.gallery-container');
+		var msnry = new Masonry(elem, {
+			// options
+			itemSelector: '.gallery-item',
+			// columnWidth: 100
+		});
+	</script>
+</body>
+
+</html>

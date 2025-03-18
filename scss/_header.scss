@@ -1,86 +1,83 @@
 @import "_fonts";
 @import "_parameters";
 
-
 body {
-	padding: 0;
-	margin: 0;
-	background-color: #191D2F;
+  padding: 0;
+  margin: 0;
+  background-color: #191d2f;
 }
 
 header {
-	width: 100%;
-	height: $headerHeight;
-	position: fixed;
-	top: 0;
-	background-image: url('../pics/космос.png');
-	background-size: 100% 200%;
+  background-color: #191d2f;
+  width: 100%;
+  height: $headerHeight;
+  position: fixed;
+  top: 0;
+  background-image: url("../pics/космос.jpg");
+  background-size: 100% 200%;
 
-	z-index: 100;
+  z-index: 100;
 
-	nav {
-		display: grid;
-		grid-template-columns: 1fr 3fr;
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 
-		@media (max-width:420px) {
-			grid-template-columns: 0 1fr;
-			// grid-template-rows: 0fr 1fr;
+    @media (max-width: 520px) {
+      grid-template-columns: 0 1fr;
+      // grid-template-rows: 0fr 1fr;
+    }
 
-		}
+    .hackatonLogo {
+      height: $headerHeight;
+      background-image: url("../pics/logo_vBig.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 15px;
+      // @media (max-width:390px) {
+      //    height: 30px;
+      // }
+    }
 
+    ul {
+      padding-inline-start: 0px;
 
-		.hackatonLogo {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      color: white;
+      list-style: none;
+      // padding: calc($headerHeight/3);
 
-			height: $headerHeight;
-			background-image: url('../pics/logo_v.png');
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-			margin-left: 15px;
-			// @media (max-width:390px) {
-			//    height: 30px;   
-			// }
-		}
+      font-family: "agFutura";
+      font-size: 14pt;
 
-		ul {
-			padding-inline-start: 0px;
+      @media (max-width: 420px) {
+        font-size: 11pt;
+        // grid-template-rows: 0fr 1fr;
+      }
 
-			display: flex;
-			justify-content: space-around;
-			align-content: center;
-			color: white;
-			list-style: none;
-			// padding: calc($headerHeight/3);
+      flex-wrap: wrap;
 
-			font-family: "agFutura";
-			font-size: 14pt;
+      a {
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        // padding: calc($headerHeight/3);
+        font-family: "agFutura";
+      }
 
-			@media (max-width:420px) {
-				font-size: 11pt;
-				// grid-template-rows: 0fr 1fr;
+      li {
+        cursor: pointer;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+      }
+    }
 
-			}
-
-			flex-wrap: wrap;
-
-			a {
-				text-decoration: none;
-				color: white;
-				list-style: none;
-				// padding: calc($headerHeight/3);
-				font-family: "agFutura";
-			}
-
-			li {
-				cursor: pointer;
-				margin-left: 8px;
-				margin-right: 8px;
-			}
-		}
-
-		ul>li:hover {
-			// font-size: 18pt;
-			font-weight: bold;
-		}
-	}
+    ul > li:hover {
+      // font-size: 18pt;
+      font-weight: bold;
+    }
+  }
 }

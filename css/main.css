@@ -14,15 +14,16 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #191D2F;
+  background-color: #191d2f;
 }
 
 header {
+  background-color: #191d2f;
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
-  background-image: url("../pics/космос.png");
+  background-image: url("../pics/космос.jpg");
   background-size: 100% 200%;
   z-index: 100;
 }
@@ -30,14 +31,14 @@ header nav {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
-@media (max-width: 420px) {
+@media (max-width: 520px) {
   header nav {
     grid-template-columns: 0 1fr;
   }
 }
 header nav .hackatonLogo {
   height: 100px;
-  background-image: url("../pics/logo_v.png");
+  background-image: url("../pics/logo_vBig.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -69,6 +70,7 @@ header nav ul li {
   cursor: pointer;
   margin-left: 8px;
   margin-right: 8px;
+  margin-top: 10px;
 }
 header nav ul > li:hover {
   font-weight: bold;
@@ -172,6 +174,43 @@ footer .footerWrapper .infoFooter p {
   width: 200px;
   border: 1px solid #fff;
   border-radius: 50%;
+  background-size: cover;
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.strausau {
+  background-image: url("../pics/strausau1.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.strausauA {
+  background-image: url("../pics/strausauA.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.strausava {
+  background-image: url("../pics/strausava.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.belocerkovskij {
+  background-image: url("../pics/belcerkovskij1.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.makarevich {
+  background-image: url("../pics/makarevich.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.director {
+  background-image: url("../pics/director.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.balash {
+  background-image: url("../pics/balash1.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.afanasiev {
+  background-image: url("../pics/afanasiev.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.zavuch {
+  background-image: url("../pics/zavuch.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.lenkova {
+  background-image: url("../pics/lenkova.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.kovalskaja {
+  background-image: url("../pics/kovalskaja.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.jana {
+  background-image: url("../pics/jana.jpg");
 }
 .organizators .organizatorsWrapper .organizator .organizatorInformation {
   min-height: 240px;
@@ -565,6 +604,35 @@ main section.ticket .bntuLogo {
   .swiper-slide img {
     width: 100vw;
   }
+}
+.tags {
+  opacity: 0.5;
+  font-size: 70%;
+}
+
+main ul.galleries li {
+  font-size: 160%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main ul.galleries li a {
+  color: white !important;
+}
+
+.loading {
+  color: white;
+}
+
+.gallery-item img {
+  width: 200px;
+  /* height: 100px; */
+  padding: 5px;
+}
+
+main.gallery {
+  padding-top: 100px;
+  color: white;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

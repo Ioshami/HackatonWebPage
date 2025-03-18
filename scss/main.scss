@@ -223,3 +223,34 @@ main {
     width: 100vw;
   }
 }
+
+.tags {
+  opacity: 0.5;
+  font-size: 70%;
+}
+
+main ul.galleries li {
+  font-size: 160%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  a {
+    color: white !important;
+  }
+}
+
+.loading {
+  color: white;
+}
+
+.gallery-item img {
+  width: 200px;
+  /* height: 100px; */
+  padding: 5px;
+}
+
+main.gallery {
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+}
