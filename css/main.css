@@ -212,6 +212,9 @@ footer .footerWrapper .infoFooter p {
 .organizators .organizatorsWrapper .organizator .organizatorPicture.jana {
   background-image: url("../pics/jana.jpg");
 }
+.organizators .organizatorsWrapper .organizator .organizatorPicture.ljadinskaja {
+  background-image: url("../pics/ljadinskaja.jpg");
+}
 .organizators .organizatorsWrapper .organizator .organizatorInformation {
   min-height: 240px;
   max-width: 420px;
