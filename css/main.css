@@ -218,6 +218,12 @@ footer .footerWrapper .infoFooter p {
 .organizators .organizatorsWrapper .organizator .organizatorPicture.ayia {
   background-image: url("../pics/ayia.png");
 }
+.organizators .organizatorsWrapper .organizator .organizatorPicture.mastitskaya {
+  background-image: url("../pics/mastitskaya.jpg");
+}
+.organizators .organizatorsWrapper .organizator .organizatorPicture.karabanova {
+  background-image: url("../pics/karabanova.jpg");
+}
 .organizators .organizatorsWrapper .organizator .organizatorInformation {
   min-height: 240px;
   max-width: 420px;
