@@ -224,6 +224,9 @@ footer .footerWrapper .infoFooter p {
 .organizators .organizatorsWrapper .organizator .organizatorPicture.karabanova {
   background-image: url("../pics/karabanova.jpg");
 }
+.organizators .organizatorsWrapper .organizator .organizatorPicture.kamenchukov {
+  background-image: url("../pics/kamenchukov.jpg");
+}
 .organizators .organizatorsWrapper .organizator .organizatorInformation {
   min-height: 240px;
   max-width: 420px;
